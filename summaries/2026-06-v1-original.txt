@@ -1,0 +1,226 @@
+========================================================================
+LOGISTICS INDUSTRY NEWSLETTER -- June 2026
+Generated: 2026-06-30 10:12 | Lookback: 30 days
+Sources: 5 | Articles analyzed: 50
+========================================================================
+
+# MONTHLY EXECUTIVE BRIEFING
+## Freight, Logistics & Supply Chain — Month in Review
+
+---
+
+### 1. EXECUTIVE SUMMARY
+
+- **Truck rates are turning the corner.** U.S. Bank/DAT data shows spot rates up 31% YoY in May with contract rates up 9%, even as volumes softened — a sign capacity is tightening structurally after a three-year recession [DC Velocity].
+- **Supreme Court hands Trump expanded firing power over independent agencies**, likely sealing the removal of STB member Robert Primus and reshaping rail merger oversight just as the UP–NS deal moves forward [FreightWaves].
+- **Ocean carriers are pressing aggressively higher.** Maersk raised 2026 guidance citing strong demand; July 1 brings new BAFs, GRIs, PSSs, and FAK hikes — potentially stacking on top of existing Hormuz-related emergency fuel surcharges [The Loadstar][Transport Topics].
+- **FedEx Freight begins life as an independent public company**, pivoting toward higher-margin verticals (data centers, healthcare, grocery, SMB) — a direct challenge to ODFL, Saia, and XPO in premium LTL [Supply Chain Dive].
+- **Driver shortage formally reclassified as "structural."** IRU projects 3.86M global driver retirements by 2030; in the U.S., border-state enforcement is intensifying inspections and CDL/immigration checks [The Loadstar][FreightWaves].
+
+---
+
+### 2. FREIGHT & TRUCKING
+
+**Rates and capacity are inflecting upward.** Spot rates climbed from $1.89/mile in March to $2.14 in May, with contract rates reaching $2.18 — the clearest signal yet that the long freight recession is breaking [DC Velocity]. U.S. Bank framed the move as a "lasting shift, rather than a temporary anomaly."
+
+**FedEx Freight's independent debut** posted Q4 revenue of $2.4B (+4.8% YoY) but operating income fell 67%. CEO John Smith is leaning into a dual priority/economy service model and targeting underpenetrated verticals — most notably data center freight [Supply Chain Dive]. Expect direct competitive pressure on Old Dominion, Saia, and XPO.
+
+**LTL incumbents are doubling down on service differentiation.** Old Dominion continues to lead on quality metrics (99% on-time, 0.5% claims ratio, 16 straight Mastio #1 rankings), while Saia launched its **REV initiative** (Rapid/Expanded/Visible), including a guaranteed 10 a.m. delivery service it claims is the earliest standard offering from any nationwide LTL [FreightWaves]. Saia's Q1 claims ratio also hit 0.50%.
+
+**Yellow Corp postscript:** Courts ruled against the Teamsters under the WARN Act, leaving the 22,000 union workers without relief — closing one of the largest labor chapters in LTL history [The Loadstar].
+
+**Border enforcement is intensifying.** Texas, Arizona, and California reported expanded commercial vehicle operations — Wichita County alone issued 109 equipment citations and impounded 16 trucks in a single op, with 24 detained on immigration grounds [FreightWaves]. Fleets running border lanes should expect heavier OOS rates and CDL scrutiny.
+
+**Driver shortage formally structural.** IRU pegs global vacancies near 3M, with Europe losing 660,000 drivers by 2030. Even during the 2022–23 freight downturn, shortages did not ease — confirming the issue is demographic, not cyclical [The Loadstar].
+
+---
+
+### 3. SUPPLY CHAIN & LOGISTICS
+
+**Port congestion at a four-year high.** Linerlytica reports 3.7M TEU (11% of the global fleet) tied up waiting for berths. North Asia accounts for 38% of global congestion; Benelux/German delays running up to a week [The Loadstar]. Rotterdam dwell times are at 7 days for exports.
+
+**Rates respond accordingly.** SCFI passed 3,200 points; Shanghai–North Europe is up 12% for 40-ft boxes, transpac east coast rates threatening $8,500/40ft in July. Maersk and Hapag-Lloyd are undercutting at <$6,000 to USWC, which could cap peer rate hikes [The Loadstar].
+
+**Carriers are pouring capacity into East Asia–Australia** as rates surged 30%+ in a month. ANL/OOCL launched ACX; Maersk launched the Qilin service. Far East–Australia spot quotes have doubled YoY [The Loadstar].
+
+**SC Ports closing Leatherman Terminal** (Charleston) August 1, consolidating to Wando and North Charleston amid tariff-driven volume softness — a notable U.S. port capacity decision [DC Velocity].
+
+**Tariff/Middle East cost pressures hitting shippers:** Del Monte flagged $40–45M in headwinds, primarily ocean freight (bunker, war surcharges, inland) [Supply Chain Dive]. J.M. Smucker, by contrast, is seeing mid-single-digit deflation in green coffee, enabling promotional pricing [Supply Chain Dive].
+
+**Container losses doubled in 2025** to 1,478 (MSC Elsa sinking accounted for 43% of total), but still 0.0005% of global flows [FreightWaves][DC Velocity].
+
+---
+
+### 4. REGULATION & POLICY
+
+**Major executive-branch power shift.** SCOTUS in *Trump v. Slaughter* overruled the 1935 Humphrey's Executor precedent, allowing at-will removal of independent agency members. Direct implication: STB member Robert Primus's lawsuit over his August 2025 firing is unlikely to succeed, giving Trump room to reshape the board ahead of the **UP–NS merger review** — the largest rail consolidation ever [FreightWaves]. Expect faster — but more politicized — STB decisions.
+
+**CBP tightens postal import rules.** Effective July 24, mail imports ≤$2,500 require HTS codes, descriptions, weights and quantities; CBP projects $100M+ in additional duty collection annually. Brokers will see expanded workload as many foreign postal operators need to secure broker relationships [Supply Chain Dive].
+
+**USPS pricing overhaul (July 12).** Dimensional divisor drops from 166 to 139 (matching UPS/FedEx), fractional inches round up, and ounce-based Ground Advantage Commercial pricing is eliminated for sub-pound packages. Lightweight/bulky shippers face the biggest hit [Supply Chain Dive].
+
+**Tariff refunds emerging as Q2 tailwind.** Treasury refunded $22B in May after SCOTUS struck IEEPA tariffs; ~40 companies discussed refunds in Q1 but only 8 booked them. Wells Fargo expects a broader pickup in Q2 [Transport Topics].
+
+**Polestar effectively shut out of U.S. market** under connected-vehicle rules targeting Chinese-linked tech; will pivot to Europe [Transport Topics]. Signals continued tightening on Chinese-origin automotive/EV components.
+
+---
+
+### 5. TECHNOLOGY & INNOVATION
+
+**Autonomous and humanoid robotics activity accelerating:**
+- **Agility Robotics announced a SPAC merger** (Churchill Capital XI) to go public as "AGLT," targeting up to $620M to scale Digit humanoid robots already deployed at GXO, Schaeffler, and Toyota [DC Velocity].
+- **Uber–Waymo Phoenix pilot wound down**, but Uber is partnering with a new AV provider; Waymo continues expanding solo across 10+ cities [Transport Topics].
+- **Tesla settled** the fatal 2023 Arizona FSD pedestrian crash lawsuit; NHTSA investigation continues [Transport Topics].
+
+**Freight tech focus on trust/fraud and automation:**
+- **Numeo AI** is positioning as broker trust infrastructure with continuous carrier verification (5,000+ dispatchers, 10,000+ drivers on platform) — a direct response to escalating broker fraud [FreightWaves].
+- **myMechanic launched Dealer-Connect** to digitize roadside repair dispatch — average breakdown resolution is currently 4+ hours [FreightWaves].
+- **VesselBot's "digital twin" benchmarking** is giving shippers ammunition to push back on carrier BAFs, with one case showing carrier BAFs 55–61% above modeled actual fuel cost [The Loadstar].
+
+**Warehouse automation continues to compound.** HelloFresh expanded Locus Robotics deployment from 100 to 500 chilled SKUs [Supply Chain Dive]; Pandora rolled out Hardis WMS globally, cutting high-severity incidents ~50% [DC Velocity]. Bringg research shows 70%+ AI adoption in last-mile routing but only ~14% investment in billing reconciliation/carrier management — the workflows where margin is actually leaking.
+
+---
+
+### 6. M&A AND MARKET MOVES
+
+- **MSC's TiL takes 49% stake in India's Vizhinjam port** in a $2.85B deal — significant terminal consolidation play by the world's largest container line [The Loadstar].
+- **C.H. Robinson acquired DeSpir Logistics**, expanding into secure/high-value freight (pharma, data centers, aerospace) — a defensible, premium-margin segment amid rising cargo theft [DC Velocity].
+- **Maersk raised 2026 guidance** twice this period, citing strong demand and 4% global container volume growth (up from 2–4%). Q2 results due Aug. 13 [Transport Topics][The Loadstar].
+- **FedEx Freight** completed spinoff and held inaugural earnings call; weight per shipment +3%, revenue per cwt +8.2% YoY [Supply Chain Dive].
+- **Stellantis-Dongfeng** will jointly produce a Jeep SUV in China for European sale by 2030 — notable reversal of Stellantis's prior China pullback [Transport Topics].
+- **LX Pantos** (South Korean 3PL, $5.6B revenue) signaling appetite for further M&A and JVs as it builds out U.S./Europe/SEA presence [The Loadstar].
+
+---
+
+### 7. WATCH LIST
+
+1. **STB composition and the UP–NS merger.** With Primus all but gone and Trump's removal authority confirmed, the board's posture on the largest rail merger in history could shift rapidly. Shippers should track replacement nominees [FreightWaves].
+
+2. **July 1 ocean rate stack-up.** Watch whether carriers double-bill via overlapping EFS + new Q3 BAFs, and whether GRIs/PSSs hold or collapse on Maersk/Hapag undercutting. Transpac east coast rates approaching $8,500/40ft are the key tell [The Loadstar].
+
+3. **Tariff refund accounting.** Expect a wave of Q2 earnings beats from companies recognizing IEEPA tariff refunds. Watch for FedEx, UPS, and large retailers signaling impact in late-July guidance [Transport Topics].
+
+4. **FedEx Freight's vertical attack.** Data center and healthcare freight push will pressure ODFL/Saia/XPO pricing discipline. Monitor weight-per-shipment and yield trends across LTL public reports [Supply Chain Dive].
+
+5. **USPS July 12 pricing changes.** First full month of compliance data will reveal which shippers absorbed the dim weight changes and whether parcel volume diverts to regional carriers or UPS Ground Saver/FedEx Ground Economy [Supply Chain Dive].
+
+6. **Humanoid robot commercial inflection.** Agility's IPO valuation and deployment pace at GXO/Schaeffler will set the benchmark for whether humanoids meaningfully impact warehouse labor economics in 2026–27 [DC Velocity].
+
+---
+
+*Prepared for executive leadership. Source articles available on request.*
+
+========================================================================
+ARTICLE INDEX
+========================================================================
+
+
+-- DC Velocity --
+  [2026-06-29] SC Ports will close a container terminal as global trade faces “headwinds”
+    https://www.dcvelocity.com/transportation/maritime-ocean/sc-ports-will-close-a-container-terminal-as-global-trade-faces-headwinds
+  [2026-06-29] IFOY competition names Jungheinrich for top prize.
+    https://www.dcvelocity.com/material-handling/ifoy-competition-names-jungheinrich-for-top-prize
+  [2026-06-29] U.S. Bank: Truck freight rates rose considerably in April and May
+    https://www.dcvelocity.com/transportation/trucking/u-s-bank-truck-freight-rates-rose-considerably-in-april-and-may
+  [2026-06-29] C.H. Robinson acquires provider of secure transportation for high-value freight
+    https://www.dcvelocity.com/supply-chain/other-services/safety-security/c-h-robinson-acquires-provider-of-secure-transportation-for-high-value-freight
+  [2026-06-26] What happens when automation meets DG shipping? See how the powerful combination of automation software and AI can help teams reduce errors, uncover savings and confidently keep shipments moving.
+    https://www.dcvelocity.com/video/dcv-tv-4-viewer-contributed/what-happens-when-automation-meets-dg-shipping-see-how-the-powerful-combination-of-automation-software-and-ai-can-help-teams-reduce-errors-uncover-savings-and-confidently-keep-shipments-moving
+  [2026-06-26] Modernizing a jewelry supply chain
+    https://www.dcvelocity.com/technology/modernizing-a-jewelry-supply-chain
+  [2026-06-25] Report: Containers lost at sea more than doubled in 2025
+    https://www.dcvelocity.com/editorial/featured/report-containers-lost-at-sea-nearly-doubled-in-2025
+  [2026-06-25] Workstation design, unpacked
+    https://www.dcvelocity.com/workstation-design-unpacked
+  [2026-06-24] Retailers juggle last-mile carriers as shoppers demand free delivery
+    https://www.dcvelocity.com/transportation/trucking/parcel-postal-carriers/retailers-juggle-last-mile-carriers-as-shoppers-demand-free-delivery
+  [2026-06-24] Agility Robotics will go public to boost rollout of humanoid robots
+    https://www.dcvelocity.com/material-handling/robotics/agility-robotics-will-go-public-to-boost-rollout-of-humanoid-robots
+
+-- FreightWaves --
+  [2026-06-30] Containers lost at sea nearly tripled in 2025
+    https://www.freightwaves.com/news/containers-lost-at-sea-nearly-tripled-in-2025
+  [2026-06-30] How Numeo AI Is Building the Trust Infrastructure Freight Brokers Need
+    https://www.freightwaves.com/news/how-numeo-ai-is-building-the-trust-infrastructure-freight-brokers-need
+  [2026-06-30] Border-state agencies expand crackdown on commercial vehicle violations
+    https://www.freightwaves.com/news/border-state-agencies-expand-crackdown-on-commercial-vehicle-violations
+  [2026-06-30] Supreme Court Decision Strengthens President’s Power to Fire STB Member Robert Primus
+    https://www.freightwaves.com/news/supreme-court-decision-strengthens-presidents-power-to-fire-stb-member-robert-primus
+  [2026-06-30] Why the Best LTL Carriers Are Built, Not Bought
+    https://www.freightwaves.com/news/why-the-best-ltl-carriers-are-built-not-bought
+  [2026-06-30] Saia REV: Rapid, Expanded and Visible
+    https://www.freightwaves.com/news/saia-rev-rapid-expanded-and-visible
+  [2026-06-30] BetterFleet proves electric fleets don’t need a full tank
+    https://www.freightwaves.com/news/betterfleet-electric-fleet-charging
+  [2026-06-30] Montana man sentenced in $182K equipment theft
+    https://www.freightwaves.com/news/montana-man-sentenced-in-182k-equipment-theft
+  [2026-06-30] How myMechanic is digitizing fleet roadside repairs
+    https://www.freightwaves.com/news/mymechanic-dealer-connect-roadside-repairs
+  [2026-06-30] New rail park aims to make Laredo more than a trucking gateway
+    https://www.freightwaves.com/news/new-rail-park-aims-to-make-laredo-more-than-a-trucking-gateway
+
+-- Supply Chain Dive --
+  [2026-06-30] HelloFresh boosts chilled fulfillment capacity via robotics deployment
+    https://www.supplychaindive.com/news/hellofresh-boosts-chilled-fulfillment-capacity-via-robotics-deployment/823994/
+  [2026-06-29] Last-mile AI: Pointed at the wrong problems
+    https://www.supplychaindive.com/spons/last-mile-ai-pointed-at-the-wrong-problems/823849/
+  [2026-06-29] Del Monte faces about $40M headwind from primarily ocean freight
+    https://www.supplychaindive.com/news/del-monte-faces-about-40m-headwind-from-primarily-ocean-freight/823783/
+  [2026-06-29] Toyota North America adjusts supply chain, manufacturing leadership
+    https://www.supplychaindive.com/news/toyota-north-america-adjusts-supply-chain-manufacturing-leadership/823798/
+  [2026-06-29] Majors Management taps AI tool for pricing, inventory and operations
+    https://www.supplychaindive.com/news/majors-management-taps-ai-tool-for-pricing-inventory-and-operations/823870/
+  [2026-06-29] CBP readies more stringent data requirements for postal imports
+    https://www.supplychaindive.com/news/cbp-readies-more-stringent-data-requirements-for-postal-imports/823923/
+  [2026-06-26] Duluth Trading boosts inventory health with SKU cuts, enterprise planning
+    https://www.supplychaindive.com/news/duluth-trading-boosts-inventory-health-with-sku-cuts-enterprise-planning/823796/
+  [2026-06-26] FedEx Freight turns focus toward high-margin shipments
+    https://www.supplychaindive.com/news/fedex-freight-turns-focus-toward-high-margin-shipments/823868/
+  [2026-06-26] How USPS shippers can navigate changes to pricing, parcel measurements
+    https://www.supplychaindive.com/news/how-usps-shippers-can-navigate-changes-to-pricing-parcel-measurements/823336/
+  [2026-06-25] JM Smucker eyes margin boost with lower green coffee commodity costs
+    https://www.supplychaindive.com/news/jm-smucker-eyes-margin-boost-with-lower-green-coffee-commodity-costs/823725/
+
+-- The Loadstar --
+  [2026-06-30] New BAFs another headache for shippers, but a ‘digital twin’ may ease the pain
+    https://theloadstar.com/new-bafs-another-headache-for-shippers-but-a-digital-twin-may-ease-the-pain/
+  [2026-06-30] MSC’s terminal arm TiL takes 49% stake in Vizhinjam port (total deal value = $2.85bn)
+    https://theloadstar.com/mscs-terminal-arm-til-takes-49-stake-in-vizhinjam-port-total-deal-value-2-85bn/
+  [2026-06-30] Rate rises loom as port congestion hits four-year high
+    https://theloadstar.com/rate-rises-loom-as-port-congestion-hits-four-year-high/
+  [2026-06-30] Truck driver shortage now a ‘structural threat’ to businesses
+    https://theloadstar.com/truck-driver-shortage-now-a-structural-threat-to-businesses/
+  [2026-06-30] Yellow Corpse – WARN Act decision stings as Teamsters lose
+    https://theloadstar.com/yellow-corpse-warn-act-decision-stings-as-teamsters-lose/
+  [2026-06-30] ‘Kudos to Mærsk’
+    https://theloadstar.com/kudos-to-maersk/
+  [2026-06-30] Hactl chief backs Bay Area cargo strategy as Cathay adds barge link
+    https://theloadstar.com/hactl-chief-backs-bay-area-cargo-strategy-as-cathay-adds-barge-link/
+  [2026-06-30] Carriers pour capacity into booming East Asia-Australia trade
+    https://theloadstar.com/carriers-pour-capacity-into-booming-east-asia-australia-trade/
+  [2026-06-30] ‘Supply chain reconfiguration is creating major opportunities’ – LX Pantos CEO
+    https://theloadstar.com/supply-chain-reconfiguration-is-creating-major-opportunities-lx-pantos-ceo/
+  [2026-06-30] Mærsk boosts 2026 guidance
+    https://theloadstar.com/maersk-boosts-2026-guidance/
+
+-- Transport Topics --
+  [2026-06-30] Canada's economy rebounds after a stagnant stretch
+    https://www.ttnews.com/articles/canada-gdp-rebounds-q2-2026
+  [2026-06-30] Tariff checks may give earnings a second-half jolt
+    https://www.ttnews.com/articles/tariff-refunds-earnings-lift
+  [2026-06-29] Tesla settles lawsuit tied to fatal 2023 FSD crash in Arizona
+    https://www.ttnews.com/articles/tesla-settles-2023-suit-crash
+  [2026-06-29] Chinese tech rule blocks future Polestar U.S. models
+    https://www.ttnews.com/articles/polestar-blocked-us-chinese
+  [2026-06-29] Maersk raises profit outlook on solid demand
+    https://www.ttnews.com/articles/maersk-raises-profit-outlook
+  [2026-06-29] Uber, Waymo end Phoenix robotaxi pilot on Uber app
+    https://www.ttnews.com/articles/uber-waymo-end-robotaxi-phoenix
+  [2026-06-29] Kenworth, Peterbilt headline USA 250th truck tributes
+    https://www.ttnews.com/articles/trucks-special-usa-250th
+  [2026-06-29] Stellantis plans China-made Jeep model for Europe by 2030
+    https://www.ttnews.com/articles/stellantis-plans-china-jeep
+  [2026-06-29] JetBlue plane reportedly hits drone near JFK
+    https://www.ttnews.com/articles/jetblue-plane-hits-drone
+  [2026-06-29] Why a Single Bypass Method Isn’t Enough
+    https://www.ttnews.com/articles/why-single-bypass-method-isnt-enough
