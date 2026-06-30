@@ -3,45 +3,41 @@
         Kelly Anderson Group / Impact Solutions | June 2026
 ========================================================================
 
-Spot truckload rates jumped 31% year over year in May. After three years of grinding through a freight recession, the over-the-road market has clearly turned -- and it's turning faster than most planners modeled. This issue: what the rate data actually says about the back half of 2026, why border-state enforcement just got tougher, what the IRU's new driver shortage report means for capacity planning, and a Supreme Court ruling that just rewrote the rules at the STB.
+Spot truck rates jumped 31% year-over-year in May. After three years of a freight recession that grew more familiar than the weather, that single number says the cycle has turned -- and it's turning fast enough that carriers who haven't repriced contracts this quarter are already behind. This issue: where rates go from here, why the driver shortage just got reclassified as a structural problem, a quiet but meaningful win for brokers in Florida, and the border-state enforcement wave reshaping risk on the road.
 
 THE BIG STORY
 
-The freight market has finally exhaled. The latest U.S. Bank Freight Payment Index, produced with DAT, shows spot rates climbed from $1.89 per mile in March to $2.14 in May -- a 31.29% year-over-year jump [DC Velocity]. Contract rates are following more slowly but still rose 9% YoY, landing at $2.18 per mile in May. What makes the move notable isn't just the magnitude; it's that rates are climbing while shipment volumes are falling. Spot volumes dropped from 1.36 million in March to 1.11 million in May. That's a tightening capacity story, not a demand-led surge.
+The over-the-road recession is finally in the rearview. The latest U.S. Bank Freight Payment Index, produced with DAT, shows spot rates up 31.29% year-over-year in May, with contract rates up 9% [DC Velocity]. On a per-mile basis, spot moved from $1.89 in March to $2.14 in May, while contract climbed to $2.18. What's notable is that the rate surge happened alongside softer shipment volumes -- spot volumes fell from 1.36 million in March to 1.11 million in May. That's a capacity story, not a demand story, and it's the kind of inflection point fleets have been waiting for.
 
-DAT's Patrick Pretorius put it plainly: the figures holding steady "point to a lasting shift, rather than a temporary anomaly" [DC Velocity]. Shippers running budgets off 2024 assumptions are about to get a surprise on renewal.
+The capacity picture is tightening on multiple fronts. The International Road Transport Union now calls the global truck driver shortage a structural threat, with roughly 3 million unfilled positions worldwide and Europe alone expecting to lose 660,000 drivers to retirement by 2030 [The Loadstar]. IRU's data shows 63% of European operators say they're already turning down loads because they can't crew the trucks. The U.S. numbers aren't quite as stark, but the demographics are similar and the bottom line is the same: capacity isn't coming back the way it did after past downturns.
 
-You can see carriers already repositioning for the new environment. FedEx Freight, fresh off its spinoff, used its first standalone earnings call to spell out the strategy: chase high-margin verticals -- healthcare, grocery, SMB, data centers -- and lean harder into its dual-service priority/economy model. Q4 revenue per shipment was up 11.5% YoY even as average daily shipments fell nearly 6% [Transport Topics]. Fewer loads, heavier loads, better-paying loads. That playbook is going to spread.
+What this means operationally: shippers who built budgets on 2024 rate assumptions are going to be unpleasantly surprised, and carriers who can hold capacity through Q3 will see the strongest pricing leverage they've had since 2022. DAT's Patrick Pretorius put it plainly -- "the figures holding steady point to a lasting shift, rather than a temporary anomaly" [DC Velocity]. Container port congestion is reinforcing the trend on the import side, with global container terminals running at a four-year high in waiting volumes and ocean spot rates climbing past $3,300 per TEU on Asia-North Europe lanes [The Loadstar].
 
-Ocean is signaling the same direction. Maersk raised 2026 guidance on the strength of container demand, port congestion has hit a four-year high, and Shanghai-to-US-West-Coast spot rates are pushing past $6,000 per 40-foot [The Loadstar]. Add the new July 1 bunker adjustment factors layered on top of emergency fuel surcharges from the Hormuz disruption, and landed costs for importers are climbing in tandem with domestic linehaul.
-
-The takeaway for carriers: pricing leverage is back, but it's uneven. Lanes, equipment type, and service reliability separate winners from also-rans. The takeaway for shippers: lock what you can, and budget for higher baselines.
+The cycle has turned. The question for the back half of the year is whether your network is positioned to capture it.
 
 QUICK TAKES
 
-Border-state enforcement is escalating fast. Texas DPS, the Arizona Highway Patrol, and California CHP all ran coordinated commercial vehicle crackdowns in the past month. One North Texas operation alone produced 109 equipment violation citations, 16 impoundments, and 24 immigration-related detentions across 93 inspections [FreightWaves]. Arizona troopers placed a driver out of service for hauling a heavy load with no CDL, no medical card, and no USDOT number. Expect inspection intensity to keep rising through the summer.
+A win for brokers in the post-Montgomery era. C.H. Robinson was dismissed from the Florida lawsuit tied to driver Harjinder Singh's fatal U-turn, after the plaintiff confirmed the 3PL had no role brokering the load and had blocked the carrier in question since January 2024 [FreightWaves]. The dismissal means the highest-profile crash case of the year won't be a test of broker liability standards post-Montgomery v. Caribe -- but the vetting documentation Robinson produced is a useful template for any brokerage building its own defensibility file.
 
-The driver shortage is now "structural," not cyclical. The IRU's 2026 report pegs the global truck driver gap at roughly 3 million, with Europe at 13% and projections that 3.86 million drivers worldwide will retire by 2030 [The Loadstar]. The headline finding: when EU freight volumes softened in 2022-23, the shortage didn't ease. That decoupling means the problem won't solve itself in the next downturn. Sixty-three percent of European operators say they're turning down growth opportunities because they can't crew the trucks.
+Border states crank up CV enforcement. A joint operation in Wichita County, Texas, ran 93 commercial vehicle inspections in a single sweep, issued 109 equipment violation citations, and impounded 16 trucks [FreightWaves]. Arizona troopers placed a driver out of service for operating without a CDL, medical card, or USDOT number. California's CHP is stepping up hours-of-service enforcement near El Centro after a rise in CV crashes. The common thread: equipment condition, driver qualification, and HOS compliance are getting fresh scrutiny -- and "we'll fix it next quarter" isn't the answer.
 
-Home delivery is now a loyalty battleground -- and it's bleeding margin. AlixPartners' 14th annual Home Delivery Survey found 94% of consumers say free shipping affects their purchase decisions, average expected delivery has compressed to 2.7 days, and 52% will boycott a retailer after just one or two botched deliveries. Meanwhile, 64% of retail executives admit home delivery is not yet profitable [DC Velocity]. Notably, reliability has overtaken price as the top carrier-selection criterion for the first time in survey history, and 55% of retailers now use carriers outside UPS, FedEx, and USPS. Final-mile providers who can prove consistency are gaining share.
+Final-mile expectations keep ratcheting tighter. AlixPartners' annual home delivery survey found consumers now expect free delivery in 2.7 days on average, down from 3.5-plus a year ago, and 52% say they'll boycott a retailer after just one or two botched deliveries [DC Velocity]. Yet 64% of retail executives say home delivery still isn't profitable. The result: 55% of retailers now use carriers outside the UPS/FedEx/USPS triangle, and reliability has overtaken price as the top criterion in carrier selection for the first time in the survey's history. For final-mile fleets, that's an opening.
 
-Cargo losses, on land and at sea. The World Shipping Council reported 1,478 containers lost at sea in 2025, more than double the prior year, with a single sinking off India accounting for 640 of them [FreightWaves, DC Velocity]. On the domestic side, the FBI and DOJ continue to grind through theft cases -- a Montana man just drew 41 months for a $182,000 construction equipment theft tracked partly through a Facebook listing. Theft sophistication is rising, and so is the insurance and claims pressure that follows.
+LTL leaders double down on service. Saia rolled out REV (Rapid, Expanded, Visible) this month, automating its guaranteed 10 a.m. delivery option network-wide and launching real-time turn-by-turn tracking [FreightWaves]. Old Dominion, meanwhile, hit its 16th consecutive year as Mastio's top-ranked national LTL carrier for quality, with a 0.5% cargo claims ratio and 99% on-time. The competitive bar in LTL keeps rising on service, not price -- and that's good news for any carrier whose differentiation strategy starts with execution.
 
-A Supreme Court ruling reshapes the STB. In Trump v. Slaughter, the Court overturned the 1935 Humphrey's Executor precedent, giving the president broad authority to remove members of independent agencies without cause [FreightWaves]. The immediate freight implication: former STB member Robert Primus's wrongful-termination case now faces very long odds, and the administration has a clearer path to reshape the board reviewing the proposed Union Pacific-Norfolk Southern merger. Whether that means faster STB decisions or more political ones is the open question.
-
-Tariff refunds, quietly, are turning into a tailwind. After the Supreme Court struck down the IEEPA-based tariffs, Treasury began processing refunds in May -- $22 billion in the first round alone, with an estimated $166 billion total in the pipeline [Transport Topics]. Wells Fargo says only eight companies recognized the benefit in Q1 earnings, but that number is set to grow. For shippers and carriers with international exposure, the cash recovery is real even if it's one-time.
+Presidential firing power gets stronger. In Trump v. Slaughter, the Supreme Court overturned the 1935 Humphrey's Executor precedent, giving the president broad authority to remove members of independent agencies including the STB [FreightWaves]. The practical takeaway for rail-served shippers and carriers watching the proposed Union Pacific-Norfolk Southern merger: STB decisions may move faster, but they'll also move more politically. Expect a more activist board.
 
 WHAT TO WATCH
 
-Humanoids enter the warehouse balance sheet. Agility Robotics announced plans to go public via SPAC merger, potentially raising up to $620 million to scale its Digit humanoid robot [DC Velocity]. GXO, Schaeffler, and Toyota are already piloting. The relevance for fleet operators: as DC labor gets automated, the bottleneck moves further out to the dock door and the driver seat -- which puts more pressure on recruiting and retention investments, not less.
+Tariff refunds hit earnings. After February's Supreme Court ruling struck down the IEEPA tariffs, Treasury has already processed roughly $22 billion in refunds, with an estimated $166 billion total in play [Transport Topics]. Few companies have booked the recovery yet, meaning Q2 and Q3 earnings could carry surprise tailwinds for shippers heavy in imported goods -- and potentially fund inventory pre-buys that show up as freight demand.
 
-Autonomy keeps stumbling forward. Tesla quietly settled the first known pedestrian-fatality lawsuit tied to its Full Self-Driving system, while NHTSA escalated its probe into how Tesla's cameras handle sun glare, dust, and fog [Transport Topics]. Meanwhile, LX Pantos expanded its coast-to-coast autonomous trucking route into a round-trip [The Loadstar]. The technology is moving; the liability framework is still being written in real time.
+Humanoids step into the warehouse mainstream. Agility Robotics announced a SPAC merger that could raise up to $620 million to scale its Digit humanoid robot, which is already deployed at GXO, Schaeffler, and others [DC Velocity]. Pair that with the driver and warehouse labor outlook, and the economics of physical automation in distribution are about to get a serious public-market stress test.
 
-Capacity dislocations at the ports. South Carolina Ports is temporarily closing its Leatherman Terminal August 1, citing "headwinds" and tempered volumes [DC Velocity]. Combined with Maersk shifting SoCal imports from BNSF to UP and ongoing North European congestion, expect more inland routing surprises through peak.
+Yellow's ghost still haunts labor planning. A federal court ruled that Yellow's 22,000 Teamsters get nothing under the WARN Act despite the abrupt 2023 shutdown [The Loadstar]. The decision narrows what employees can expect when carriers fail suddenly -- and quietly shifts more of that risk onto drivers and dockworkers evaluating where to work.
 
 THE BOTTOM LINE
 
-A market turning up is a better problem than a market turning down, but it isn't an easier one. Capacity is tightening because drivers are aging out, enforcement is sharpening, and shippers are demanding more reliability for less time. The carriers and final-mile operators who come out of this cycle ahead will be the ones who invested in their people and their discipline while the rates were still soft.
+The freight market has turned, capacity is structurally tighter than the last cycle suggested it would be, and the operators winning new business are the ones competing on reliability rather than rate. Whether you run line-haul or final-mile, the back half of 2026 favors carriers who invested in their drivers, their equipment, and their service story while everyone else was waiting for the rebound. It's here.
 
 ------------------------------------------------------------------------
 Kelly Anderson Group / Impact Solutions
@@ -85,6 +81,8 @@ Compiled 2026-06-30 from 5 publications over the past 30 days.
              https://www.dcvelocity.com/material-handling/robotics/agility-robotics-will-go-public-to-boost-rollout-of-humanoid-robots
 
 [FreightWaves]
+  2026-06-30  C.H. Robinson out of Florida ‘U-turn’ lawsuit
+             https://www.freightwaves.com/news/c-h-robinson-out-of-florida-u-turn-lawsuit
   2026-06-30  Prologis presses Segro after $16.6B offer rejected
              https://www.freightwaves.com/news/prologis-presses-segro-after-16-6b-offer-rejected
   2026-06-30  Atlas Air, ABX seek permission for Venezuela cargo flights
@@ -103,10 +101,10 @@ Compiled 2026-06-30 from 5 publications over the past 30 days.
              https://www.freightwaves.com/news/saia-rev-rapid-expanded-and-visible
   2026-06-30  BetterFleet proves electric fleets don’t need a full tank
              https://www.freightwaves.com/news/betterfleet-electric-fleet-charging
-  2026-06-30  Montana man sentenced in $182K equipment theft
-             https://www.freightwaves.com/news/montana-man-sentenced-in-182k-equipment-theft
 
 [Supply Chain Dive]
+  2026-06-30  GM invests $275M in Tennessee plant
+             https://www.supplychaindive.com/news/gm-invests-275m-in-tennessee-plant/824045/
   2026-06-30  FedEx to return full MD-11 capacity ahead of peak season
              https://www.supplychaindive.com/news/fedex-to-return-full-md-11-capacity-ahead-of-peak-season/824004/
   2026-06-30  HelloFresh boosts chilled fulfillment capacity via robotics deployment
@@ -125,8 +123,6 @@ Compiled 2026-06-30 from 5 publications over the past 30 days.
              https://www.supplychaindive.com/news/cbp-readies-more-stringent-data-requirements-for-postal-imports/823923/
   2026-06-26  Duluth Trading boosts inventory health with SKU cuts, enterprise planning
              https://www.supplychaindive.com/news/duluth-trading-boosts-inventory-health-with-sku-cuts-enterprise-planning/823796/
-  2026-06-26  FedEx Freight turns focus toward high-margin shipments
-             https://www.supplychaindive.com/news/fedex-freight-turns-focus-toward-high-margin-shipments/823868/
 
 [The Loadstar]
   2026-06-30  New BAFs another headache for shippers, but a ‘digital twin’ may ease the pain
