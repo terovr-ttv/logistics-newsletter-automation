@@ -1,0 +1,186 @@
+========================================================================
+                          BETWEEN THE LINES
+        Kelly Anderson Group / Impact Solutions | July 2026
+========================================================================
+
+OPENING
+
+"Rates have not kept up with that pace of inflation," Schneider's incoming CEO Jim Filter told Transport Topics this week -- and the market is finally catching up. Spot rates jumped 31% year-over-year in May [U.S. Bank], tender rejections punched through 17% heading into July 4, and the longest freight downturn in memory looks well and truly over. Inside this issue: what the rebound really means, the post-Montgomery broker liability landscape, a cargo-theft wave that just won't quit, and the global driver math getting harder.
+
+THE BIG STORY
+
+The freight market has turned -- and this time it looks structural, not seasonal.
+
+U.S. Bank's latest Freight Payment Index shows spot rates climbing from $1.89 per mile in March to $2.14 in May, with contract rates following from $2.09 to $2.18 over the same stretch [DC Velocity]. Spot volumes actually fell during that window, which is the tell: rates are rising because capacity is leaving, not because demand is surging.
+
+Where's the capacity going? A meaningful chunk is being pulled out by the federal crackdown on non-domiciled CDL holders and non-compliant carriers -- the same enforcement wave that turned last year's Florida Turnpike U-turn crash into a national story. Filter, who took Schneider's wheel July 1, put it plainly to Transport Topics: "The amount of capacity that entered the market wasn't playing by the same set of rules as everybody else." He estimates carrier costs are up roughly 25% since 2020 while rates lagged badly -- and he doesn't expect capacity to grow again until that gap closes.
+
+FreightWaves' Craig Fuller framed the July 4 week as the freight market's Super Bowl, with routing guides expected to fail Wednesday through Thursday as driver availability tightens. Brokers with on-demand capacity, private-fleet access, and clean carrier rosters are the ones getting the phone calls.
+
+The catch: shippers are getting squeezed from every direction at once. China-to-U.S. West Coast ocean spot rates have run from $1,800 in March to more than $6,100 today -- a 239% jump that has nothing to do with demand and everything to do with the top 10 ocean carriers controlling roughly 90% of global capacity [FreightWaves]. Warehouse rents are climbing. Fuel surcharges are back in play even as retail diesel has now fallen eight straight weeks to $4.67/gal [FreightWaves]. And U.S. Bank's Jeff Pape warns shippers who don't refresh their assumptions "may risk planning on outdated cost assumptions."
+
+For carriers, the message is simpler: the pricing power is back, but only for operators who can prove they belong on the road.
+
+QUICK TAKES
+
+Post-Montgomery broker liability comes into focus
+C.H. Robinson was dismissed from the Florida U-turn wrongful-death suit roughly two weeks after being named, after showing no connection to the load or carrier [FreightWaves]. The real precedent-setter -- Montgomery v. Caribe Transport II -- returns to the Seventh Circuit this month. Meanwhile, Descartes rolled out AuditLog inside MyCarrierPortal, capturing snapshot-based documentation of carrier vetting decisions specifically to meet the new "reasonable care" bar. Expect defensible documentation to move from nice-to-have to table stakes.
+
+Cargo fraud keeps escalating
+A California driver was arrested in Indiana with nearly $2.9 million in tungsten oxide powder allegedly obtained through fraudulent documents en route to Japan [FreightWaves]. Separately, a Chicago federal judge sentenced a Lithuanian national to five years for running a multi-year ring that used at least 11 aliases, fake carriers, and load-board impersonation to divert roughly 90 shipments worth $10.1 million [Transport Topics]. ATRI pegs total industry losses at $6.6 billion annually. Identity verification at booking is now a security control, not a paperwork step.
+
+Global driver shortage, worse than it looks
+IRU's 2025 survey puts unfilled truck driver positions at about 2.9 million across 18 markets -- roughly 11% of the workforce [DC Velocity]. Europe is short 502,000 drivers, and about 20% of European drivers and 24% of Australian drivers will retire within five years. IRU's punchline: pay hikes alone are hitting a "wage wall." Cab conditions, secure parking, predictable schedules, and time at home now move the needle more than wages.
+
+Florida attacks the parking problem
+FMCSA, FHWA, and FDOT broke ground on projects that will add more than 900 truck parking spaces along the I-4 corridor, backed by a $180 million INFRA grant [Transport Topics]. The Orlando-to-Tampa stretch currently has 90 public spots serving 18,000 daily trucks. Construction on the first three sites finishes within a year -- a rare piece of infrastructure news that will directly affect HOS compliance for anyone running the Southeast.
+
+Consolidation continues at the dealer and carrier level
+Rush Enterprises acquired five Peterbilt of Louisiana dealerships, a collision center, and a PacLease operation across Baton Rouge, Houma, Lafayette, Lake Charles, and New Orleans -- cementing Rush as North America's largest Peterbilt dealer group [Transport Topics]. On the freight side, PLS Logistics picked up international forwarder AGL Group, and C.H. Robinson bought DeSpir Logistics to build out secure transport for high-value freight [DC Velocity]. The dedicated and specialty niches are where the deal flow is.
+
+FedEx Freight steps out on its own
+The June 1 spin-off makes FedEx Freight the largest pure-play LTL carrier in North America, with 26,000 dock doors [DC Velocity]. CEO John Smith told SMC3 Connections attendees the company added 500 LTL-focused salespeople and nearly 900 IT staff to stand up independently. Meanwhile, FedEx's MD-11 fleet -- grounded after last year's UPS crash -- is returning to service ahead of peak, with four aircraft back in the air [Supply Chain Dive].
+
+WHAT TO WATCH
+
+EU de minimis just ended
+As of July 1, parcels under €150 entering the EU face a flat €3 customs duty, mirroring the U.S. move on Chinese ecommerce last year [The Loadstar]. When Washington did this, forwarder volumes dropped hard before settling around 75% of prior levels. Expect a similar reset in cross-border ecommerce flows -- and watch for platforms to pivot promotions toward the UK while it finalizes its own approach.
+
+CBP tightens the screws on imports
+New forced-labor guidance from CBP effectively requires importers to document every supplier in every production tier or risk denial of entry [The Loadstar]. Separately, a July 24 interim final rule adds detailed data requirements on postal imports valued under $2,500 -- CBP estimates a $100 million-plus bump in annual duties. Compliance teams and brokers should be talking now.
+
+Ocean rate whiplash
+With Middle East shipping still not normalized and carriers actively managing capacity, expect continued volatility on trans-Pacific rates through peak. Del Monte already flagged a $40-45 million ocean-freight-driven cost hit [Supply Chain Dive]. If your customers ship internationally, their landed-cost math is moving weekly.
+
+THE BOTTOM LINE
+
+The through-line this month is discipline paying off. Rates are rising because the industry is finally shedding capacity that shouldn't have been there. Brokers and carriers who documented, vetted, and trained well are the ones being trusted -- and paid -- as the market resets. The rebound rewards the operators who stayed ready during the downturn. That's a good place to be.
+
+------------------------------------------------------------------------
+Kelly Anderson Group / Impact Solutions
+Workforce development for the transportation industry since 1996.
+
+  Final Mile Safety Trainer Program ......... P&D fleets
+  Truckload Driver Finisher Program ......... line-haul carriers
+  ELDT, e-Learning, recruiting and retention consulting
+
+  www.kellyandersongroup.com  |  (417) 451-0853
+  Bill Rohr  |  billrohr@kellyandersongroup.com
+------------------------------------------------------------------------
+
+
+========================================================================
+SOURCES
+Compiled 2026-07-01 from 5 publications over the past 30 days.
+========================================================================
+
+
+[DC Velocity]
+  2026-06-30  Heavy hitters, new entrants capitalize on trucking industry shifts
+             https://www.dcvelocity.com/editorial/featured/heavy-hitters-new-entrants-capitalize-on-trucking-industry-shifts
+  2026-06-30  Consumer brands prepare for packaging reduction laws
+             https://www.dcvelocity.com/material-handling/order-fulfillment-packing/consumer-brands-prepare-for-packaging-reduction-laws
+  2026-06-30  IRU report finds global truck driver shortage
+             https://www.dcvelocity.com/supply-chain/other-services/labor/iru-report-finds-global-truck-driver-shortage
+  2026-06-30  Gartner lists top eight trends in supply chain technology
+             https://www.dcvelocity.com/technology/artificial-intelligence/gartner-lists-top-eight-trends-in-supply-chain-technology
+  2026-06-29  SC Ports will close a container terminal as global trade faces “headwinds”
+             https://www.dcvelocity.com/transportation/maritime-ocean/sc-ports-will-close-a-container-terminal-as-global-trade-faces-headwinds
+  2026-06-29  IFOY competition names Jungheinrich for top prize.
+             https://www.dcvelocity.com/material-handling/ifoy-competition-names-jungheinrich-for-top-prize
+  2026-06-29  U.S. Bank: Truck freight rates rose considerably in April and May
+             https://www.dcvelocity.com/transportation/trucking/u-s-bank-truck-freight-rates-rose-considerably-in-april-and-may
+  2026-06-29  C.H. Robinson acquires provider of secure transportation for high-value freight
+             https://www.dcvelocity.com/supply-chain/other-services/safety-security/c-h-robinson-acquires-provider-of-secure-transportation-for-high-value-freight
+  2026-06-26  What happens when automation meets DG shipping? See how the powerful combination of automation software and AI can help teams reduce errors, uncover savings and confidently keep shipments moving.
+             https://www.dcvelocity.com/video/dcv-tv-4-viewer-contributed/what-happens-when-automation-meets-dg-shipping-see-how-the-powerful-combination-of-automation-software-and-ai-can-help-teams-reduce-errors-uncover-savings-and-confidently-keep-shipments-moving
+  2026-06-26  Modernizing a jewelry supply chain
+             https://www.dcvelocity.com/technology/modernizing-a-jewelry-supply-chain
+
+[FreightWaves]
+  2026-07-01  Transforming Carrier Review Management into Defensible Documentation
+             https://www.freightwaves.com/news/transforming-carrier-review-management-into-defensible-documentation
+  2026-07-01  Truck driver accused of using fake documents to steal $2.9M cargo
+             https://www.freightwaves.com/news/truck-driver-accused-of-using-fake-documents-to-steal-2-9m-cargo
+  2026-07-01  CSX marks unique status with DC 250 rail event
+             https://www.freightwaves.com/news/csx-marks-unique-status-with-dc-250-rail-event
+  2026-06-30  Demystifying Factoring: How It Can Become a Real Business Tool for Carriers
+             https://www.freightwaves.com/news/demystifying-factoring-how-it-can-become-a-real-business-tool-for-carriers
+  2026-06-30  Container Shipping: Why Rates are Skyrocketing (It’s NOT Demand)
+             https://www.freightwaves.com/news/container-shipping-why-rates-are-skyrocketing-its-not-demand
+  2026-06-30  Road to Sweden: Unpacking Volvo Trucks’ Global Service Competition
+             https://www.freightwaves.com/news/road-to-sweden-unpacking-volvo-trucks-global-service-competition
+  2026-06-30  C.H. Robinson Cleared in Florida ‘U-Turn’ Lawsuit | Broker Liability Test
+             https://www.freightwaves.com/news/c-h-robinson-cleared-in-florida-u-turn-lawsuit-broker-liability-test
+  2026-06-30  Freight Markets Explode: Will Spot Rates Continue Record Surge?
+             https://www.freightwaves.com/news/freight-markets-explode-will-spot-rates-continue-record-surge
+  2026-06-30  AI & Logistics: Will a ‘Job Apocalypse’ Hit the Supply Chain?
+             https://www.freightwaves.com/news/ai-logistics-will-a-job-apocalypse-hit-the-supply-chain
+  2026-06-30  Retail diesel falling while futures soaring relative to crude
+             https://www.freightwaves.com/news/retail-diesel-falling-while-futures-soaring-relative-to-crude
+
+[Supply Chain Dive]
+  2026-06-30  GM invests $275M in Tennessee plant
+             https://www.supplychaindive.com/news/gm-invests-275m-in-tennessee-plant/824045/
+  2026-06-30  FedEx to return full MD-11 capacity ahead of peak season
+             https://www.supplychaindive.com/news/fedex-to-return-full-md-11-capacity-ahead-of-peak-season/824004/
+  2026-06-30  HelloFresh boosts chilled fulfillment capacity via robotics deployment
+             https://www.supplychaindive.com/news/hellofresh-boosts-chilled-fulfillment-capacity-via-robotics-deployment/823994/
+  2026-06-30  Lovesac on track with tariff-driven onshoring effort
+             https://www.supplychaindive.com/news/lovesac-on-track-with-tariff-driven-onshoring-effort/824009/
+  2026-06-29  Last-mile AI: Pointed at the wrong problems
+             https://www.supplychaindive.com/spons/last-mile-ai-pointed-at-the-wrong-problems/823849/
+  2026-06-29  Del Monte faces about $40M headwind from primarily ocean freight
+             https://www.supplychaindive.com/news/del-monte-faces-about-40m-headwind-from-primarily-ocean-freight/823783/
+  2026-06-29  Toyota North America adjusts supply chain, manufacturing leadership
+             https://www.supplychaindive.com/news/toyota-north-america-adjusts-supply-chain-manufacturing-leadership/823798/
+  2026-06-29  Majors Management taps AI tool for pricing, inventory and operations
+             https://www.supplychaindive.com/news/majors-management-taps-ai-tool-for-pricing-inventory-and-operations/823870/
+  2026-06-29  CBP readies more stringent data requirements for postal imports
+             https://www.supplychaindive.com/news/cbp-readies-more-stringent-data-requirements-for-postal-imports/823923/
+  2026-06-26  Duluth Trading boosts inventory health with SKU cuts, enterprise planning
+             https://www.supplychaindive.com/news/duluth-trading-boosts-inventory-health-with-sku-cuts-enterprise-planning/823796/
+
+[The Loadstar]
+  2026-07-01  MSC’s new spending spree to boost ‘already massive’ orderbook
+             https://theloadstar.com/msc-on-new-spending-spree-to-boost-already-massive-orderbook/
+  2026-07-01  Ready or not, it’s the end of de minimis in the EU
+             https://theloadstar.com/ready-or-not-its-the-end-of-de-minimis-in-the-eu/
+  2026-07-01  Visibility no longer enough as FourKites bets on AI execution
+             https://theloadstar.com/visibility-no-longer-enough-as-fourkites-bets-on-ai-execution/
+  2026-07-01  Monopoly fears as MSC buys into Vizhinjam Port
+             https://theloadstar.com/monopoly-fears-as-msc-buys-into-vizhinjam-port/
+  2026-07-01  ‘Supply chain reconfiguration is creating major opportunities’ – LX Pantos CEO
+             https://theloadstar.com/supply-chain-reconfiguration-is-creating-major-opportunities-lx-pantos-ceo/
+  2026-07-01  The ‘Fortnight Brace’ governs today’s ocean spot market
+             https://theloadstar.com/the-fortnight-brace-governs-todays-ocean-spot-market/
+  2026-07-01  ‘Bizarre’ direct air waybill revamp a ‘game-changer’ for forwarders
+             https://theloadstar.com/bizarre-direct-air-waybill-revamp-a-game-changer-for-forwarders/
+  2026-07-01  CBP’s new ‘forced labor’ rules burden every link in the chain
+             https://theloadstar.com/cbps-new-forced-labor-rules-burden-every-link-in-the-chain/
+  2026-07-01  Rising prices and front-loading depress LatAm-to-N America trade
+             https://theloadstar.com/rising-prices-and-front-loading-depress-latam-to-n-america-trade/
+  2026-07-01  Mærsk – Europe market update July 2026
+             https://theloadstar.com/maersk-europe-market-update-july-2026/
+
+[Transport Topics]
+  2026-07-01  U.S. companies add 98,000 jobs in June
+             https://www.ttnews.com/articles/payrolls-june-2026
+  2026-07-01  Wisconsin native Jim Filter takes the wheel at Schneider
+             https://www.ttnews.com/articles/jim-filter-new-schneider-ceo
+  2026-06-30  Air Products scraps Louisiana hydrogen project
+             https://www.ttnews.com/articles/air-products-hydrogen-louisiana
+  2026-06-30  Amazon to pay more than $2M in FTC identity theft case
+             https://www.ttnews.com/articles/amazon-settles-ftc-case-2m
+  2026-06-30  U.S. sanctions Mexican fuel firms tied to cartel case
+             https://www.ttnews.com/articles/us-sanctions-mexico-fuel-firms
+  2026-06-30  Rush Truck Centers buys 5 Peterbilt dealerships in South La.
+             https://www.ttnews.com/articles/rush-buys-5-peterbilt-louisiana
+  2026-06-30  Inside a $10.1M cargo theft ring
+             https://www.ttnews.com/articles/inside-cargo-theft-ring
+  2026-06-30  PLS expands freight forwarding with AGL acquisition
+             https://www.ttnews.com/articles/pls-logistics-acquires-agl
+  2026-06-30  Florida expands truck parking on I‑4 to address safety risks
+             https://www.ttnews.com/articles/florida-parking-expansion
+  2026-06-30  Canada's economy rebounds after a stagnant stretch
+             https://www.ttnews.com/articles/canada-gdp-rebounds-q2-2026
