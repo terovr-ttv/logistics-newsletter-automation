@@ -153,7 +153,7 @@
 .btl-foot {
   border-top: 4px solid var(--btl-navy);
   padding-top: 24px !important;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
   font-family: Helvetica, Arial, sans-serif !important;
 }
 .btl-foot .btl-foot-name {
@@ -171,7 +171,15 @@
 }
 .btl-foot td:first-child { font-weight: 600; }
 .btl-foot td:last-child { text-align: right; color: var(--btl-muted) !important; white-space: nowrap; padding-left: 12px !important; }
-.btl-foot .btl-foot-contact { font-size: 14px; line-height: 1.8; }
+.btl-foot .btl-foot-contact { font-size: 14px; line-height: 1.8; margin-bottom: 12px; }
+.btl-foot .btl-foot-copyright {
+  font-size: 11px;
+  color: var(--btl-muted) !important;
+  letter-spacing: 0.5px;
+  padding-top: 12px;
+  border-top: 1px solid #E5E5E5;
+  margin-top: 4px;
+}
 
 .btl-src {
   border-top: 1px solid #DDD;
@@ -207,8 +215,77 @@
 .btl-src-row a { font-size: 13px !important; text-decoration: none !important; }
 .btl-src-row a:hover { text-decoration: underline !important; }
 
+/* --- Deck (italic subhead under section labels) --- */
+.btl-deck {
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-size: 15px !important;
+  font-style: italic !important;
+  color: var(--btl-muted) !important;
+  margin: -14px 0 22px 0 !important;
+  line-height: 1.4 !important;
+}
+
+/* --- Dropcap on first paragraph of Big Story --- */
+.btl-dropcap::first-letter {
+  float: left;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 66px;
+  line-height: 0.85;
+  font-weight: 700;
+  color: var(--btl-navy);
+  padding: 6px 12px 0 0;
+}
+
+/* --- By the Numbers callout --- */
+.btl-stats {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 16px !important;
+  background: var(--btl-paper) !important;
+  border-left: 4px solid var(--btl-navy) !important;
+  padding: 22px 24px !important;
+  margin: 28px 0 !important;
+}
+.btl-stat-num {
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  color: var(--btl-red) !important;
+  line-height: 1 !important;
+  margin: 0 0 6px 0 !important;
+}
+.btl-stat-label {
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 11px !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  color: var(--btl-navy) !important;
+  line-height: 1.35 !important;
+  margin: 0 !important;
+}
+
+/* --- Item meta row (topic tag) --- */
+.btl-item-meta {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-bottom: 8px !important;
+}
+.btl-item-tag {
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  color: #FFFFFF !important;
+  background: var(--btl-navy) !important;
+  padding: 4px 9px !important;
+  border-radius: 2px !important;
+  line-height: 1 !important;
+}
+
 @media (max-width: 640px) {
-  .btl-wrap { font-size: 16px !important; padding: 0 4px; }
+  .btl-wrap { font-size: 16px !important; padding: 12px !important; }
   .btl-mast h1 { font-size: 24px !important; letter-spacing: 1.5px !important; }
   .btl-mast .btl-mast-sub { font-size: 11px; letter-spacing: 1px; }
   .btl-wrap h2 { font-size: 21px !important; }
@@ -221,6 +298,39 @@
   .btl-foot td:first-child { padding-top: 8px !important; }
   .btl-foot td:last-child { text-align: left !important; border-bottom: 1px dotted #CCC !important; padding-bottom: 8px !important; padding-left: 0 !important; }
   .btl-src-row { padding-left: 10px !important; }
+  .btl-stats { grid-template-columns: repeat(2, 1fr) !important; padding: 18px !important; }
+  .btl-stat-num { font-size: 26px !important; }
+  .btl-dropcap::first-letter { font-size: 52px; padding-right: 8px; }
+  .btl-deck { font-size: 14px !important; margin: -10px 0 18px 0 !important; }
+}
+
+/* --- Print stylesheet --- */
+@media print {
+  .btl-wrap { max-width: 100% !important; padding: 0 !important; font-size: 11pt !important; background: #FFFFFF !important; }
+  .btl-mast h1 { font-size: 28pt !important; }
+  .btl-mast .btl-mast-sub { font-size: 9pt !important; }
+  .btl-wrap h2 { font-size: 18pt !important; }
+  .btl-wrap h3 { font-size: 13pt !important; }
+  .btl-section, .btl-item, .btl-stats, .btl-quote { page-break-inside: avoid; break-inside: avoid; }
+  .btl-bottom {
+    background: none !important;
+    border: 2px solid var(--btl-navy) !important;
+  }
+  .btl-bottom p, .btl-bottom .btl-label { color: var(--btl-ink) !important; }
+  .btl-item-tag {
+    background: none !important;
+    color: var(--btl-red) !important;
+    border: 1px solid var(--btl-red) !important;
+  }
+  .btl-src-toggle { display: none !important; }
+  .btl-src-body { display: block !important; }
+  .btl-src-row a { color: var(--btl-ink) !important; text-decoration: none !important; }
+  .btl-src-row a::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: var(--btl-muted);
+    word-break: break-all;
+  }
 }
 </style>
 
@@ -229,7 +339,7 @@
 
   <div class="btl-mast">
     <h1>Between the Lines</h1>
-    <div class="btl-mast-sub">Kelly Anderson Group / Impact Solutions &nbsp;|&nbsp; ${month_year}</div>
+    <div class="btl-mast-sub">Issue No. ${issue_number} &nbsp;&middot;&nbsp; ${month_year} &nbsp;&middot;&nbsp; Kelly Anderson Group / Impact Solutions</div>
   </div>
 
   <div class="btl-opening">
@@ -239,17 +349,20 @@
 
   <div class="btl-section">
     <div class="btl-label">The Big Story</div>
+    <div class="btl-deck">${big_story_deck}</div>
     <h2>${big_story_headline}</h2>
-${big_story_paragraphs}
+${big_story_body}
   </div>
 
   <div class="btl-section">
     <div class="btl-label">Quick Takes</div>
+    <div class="btl-deck">What else moved the market this month.</div>
 ${quick_takes}
   </div>
 
   <div class="btl-section">
     <div class="btl-label">What to Watch</div>
+    <div class="btl-deck">Stories worth tracking into next month.</div>
 ${what_to_watch}
   </div>
 
@@ -280,6 +393,10 @@ ${what_to_watch}
     <div class="btl-foot-contact">
       <a href="https://www.kellyandersongroup.com">www.kellyandersongroup.com</a>
       &nbsp;|&nbsp; <a href="tel:14174510853">(417) 451-0853</a>
+    </div>
+
+    <div class="btl-foot-copyright">
+      &copy; ${year} Kelly Anderson Group. Compiled from public industry reporting.
     </div>
   </div>
 
