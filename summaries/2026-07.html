@@ -1,0 +1,400 @@
+<style>
+/* ============================================================
+   BETWEEN THE LINES - newsletter template
+   HARDENED: scoped, theme-proof, responsive
+   ============================================================ */
+.btl-wrap {
+  --btl-navy:   #1B3A5C;
+  --btl-red:    #C1272D;
+  --btl-ink:    #1A1A1A;
+  --btl-muted:  #6B6B6B;
+  --btl-paper:  #F4F4F2;
+}
+
+.btl-wrap, .btl-wrap * {
+  box-sizing: border-box !important;
+  -webkit-text-size-adjust: 100%;
+}
+.btl-wrap {
+  max-width: 780px;
+  margin: 0 auto !important;
+  padding: 0 20px;
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: var(--btl-ink) !important;
+  text-align: left !important;
+}
+.btl-wrap h1, .btl-wrap h2, .btl-wrap h3, .btl-wrap p,
+.btl-wrap ul, .btl-wrap li, .btl-wrap blockquote, .btl-wrap table {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0;
+  font-weight: normal;
+  text-transform: none !important;
+  letter-spacing: normal;
+  color: inherit !important;
+  background: none;
+}
+.btl-wrap a {
+  color: var(--btl-navy) !important;
+  text-decoration: underline !important;
+  box-shadow: none !important;
+}
+.btl-wrap a:hover { color: var(--btl-red) !important; }
+
+.btl-mast {
+  border-top: 5px solid var(--btl-navy);
+  border-bottom: 2px solid var(--btl-red);
+  padding: 20px 0 16px !important;
+  margin-bottom: 36px;
+  text-align: center !important;
+}
+.btl-mast h1 {
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 36px !important;
+  line-height: 1.1 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  color: var(--btl-navy) !important;
+  margin: 0 0 8px !important;
+}
+.btl-mast .btl-mast-sub {
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--btl-muted) !important;
+}
+
+.btl-label {
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase !important;
+  font-weight: 700;
+  color: var(--btl-red) !important;
+  border-bottom: 2px solid var(--btl-navy);
+  padding-bottom: 6px !important;
+  margin-bottom: 20px !important;
+}
+
+.btl-section { margin-bottom: 44px; }
+
+.btl-opening {
+  background: var(--btl-paper);
+  border-left: 4px solid var(--btl-red);
+  padding: 20px 24px !important;
+  margin-bottom: 40px;
+}
+.btl-opening .btl-label { border: 0; margin-bottom: 10px !important; padding-bottom: 0 !important; }
+
+.btl-wrap h2 {
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 25px !important;
+  line-height: 1.3 !important;
+  font-weight: 700 !important;
+  color: var(--btl-navy) !important;
+  margin: 0 0 16px !important;
+}
+.btl-wrap h3 {
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.35 !important;
+  font-weight: 700 !important;
+  color: var(--btl-navy) !important;
+  margin: 0 0 8px !important;
+}
+.btl-wrap p { margin: 0 0 16px !important; }
+.btl-wrap p:last-child { margin-bottom: 0 !important; }
+
+.btl-item { margin-bottom: 26px; }
+.btl-item:last-child { margin-bottom: 0; }
+.btl-item p { font-size: 16px !important; }
+
+.btl-cite {
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 12px;
+  color: var(--btl-muted) !important;
+  white-space: nowrap;
+}
+
+.btl-quote {
+  margin: 24px 0 !important;
+  padding: 4px 0 4px 24px !important;
+  border-left: 3px solid var(--btl-red) !important;
+  font-size: 20px !important;
+  line-height: 1.45 !important;
+  font-style: italic;
+  color: #333 !important;
+}
+.btl-quote cite {
+  display: block;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 13px;
+  font-style: normal;
+  color: var(--btl-muted) !important;
+  margin-top: 10px;
+}
+
+.btl-bottom {
+  background: var(--btl-navy);
+  padding: 26px 28px !important;
+  margin-bottom: 44px;
+}
+.btl-bottom .btl-label {
+  color: #FFF !important;
+  border-bottom: 2px solid var(--btl-red);
+}
+.btl-bottom p { color: #F0F0EE !important; font-size: 18px !important; }
+
+.btl-foot {
+  border-top: 4px solid var(--btl-navy);
+  padding-top: 24px !important;
+  margin-bottom: 36px;
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+.btl-foot .btl-foot-name {
+  font-size: 18px; font-weight: 700; color: var(--btl-navy) !important; margin-bottom: 4px;
+}
+.btl-foot .btl-foot-tag {
+  font-size: 14px; font-style: italic; color: var(--btl-muted) !important; margin-bottom: 18px;
+}
+.btl-foot table { width: 100% !important; border-collapse: collapse !important; margin-bottom: 18px !important; }
+.btl-foot td {
+  padding: 7px 0 !important;
+  border-bottom: 1px dotted #CCC !important;
+  font-size: 14px !important;
+  vertical-align: top;
+}
+.btl-foot td:first-child { font-weight: 600; }
+.btl-foot td:last-child { text-align: right; color: var(--btl-muted) !important; white-space: nowrap; padding-left: 12px !important; }
+.btl-foot .btl-foot-contact { font-size: 14px; line-height: 1.8; }
+
+.btl-src {
+  border-top: 1px solid #DDD;
+  padding-top: 20px !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+.btl-src-toggle {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--btl-red) !important;
+  background: none !important;
+  border: 0 !important;
+  padding: 0 !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+.btl-src-toggle:after { content: " \25BE"; }
+.btl-src-toggle.btl-open:after { content: " \25B4"; }
+.btl-src-body { display: none; margin-top: 18px; font-size: 13px; color: #555 !important; line-height: 1.55; }
+.btl-src-body.btl-open { display: block; }
+.btl-src-note { font-style: italic; margin-bottom: 20px !important; color: var(--btl-muted) !important; }
+.btl-src-pub { margin-bottom: 20px; }
+.btl-src-pub-name { font-weight: 700; color: var(--btl-navy) !important; margin-bottom: 8px; font-size: 14px; }
+.btl-src-row {
+  padding-left: 14px !important;
+  border-left: 2px solid #EEE !important;
+  margin-bottom: 8px !important;
+}
+.btl-src-date { color: #999 !important; margin-right: 8px; white-space: nowrap; }
+.btl-src-row a { font-size: 13px !important; text-decoration: none !important; }
+.btl-src-row a:hover { text-decoration: underline !important; }
+
+@media (max-width: 640px) {
+  .btl-wrap { font-size: 16px !important; padding: 0 4px; }
+  .btl-mast h1 { font-size: 24px !important; letter-spacing: 1.5px !important; }
+  .btl-mast .btl-mast-sub { font-size: 11px; letter-spacing: 1px; }
+  .btl-wrap h2 { font-size: 21px !important; }
+  .btl-wrap h3 { font-size: 17px !important; }
+  .btl-quote { font-size: 18px !important; padding-left: 16px !important; }
+  .btl-bottom { padding: 20px !important; }
+  .btl-bottom p { font-size: 17px !important; }
+  .btl-opening { padding: 16px 18px !important; }
+  .btl-foot td { display: block; width: 100% !important; border-bottom: 0 !important; padding: 2px 0 !important; }
+  .btl-foot td:first-child { padding-top: 8px !important; }
+  .btl-foot td:last-child { text-align: left !important; border-bottom: 1px dotted #CCC !important; padding-bottom: 8px !important; padding-left: 0 !important; }
+  .btl-src-row { padding-left: 10px !important; }
+}
+</style>
+
+
+<div class="btl-wrap">
+
+  <div class="btl-mast">
+    <h1>Between the Lines</h1>
+    <div class="btl-mast-sub">Kelly Anderson Group / Impact Solutions &nbsp;|&nbsp; July 2026</div>
+  </div>
+
+  <div class="btl-opening">
+    <div class="btl-label">Opening</div>
+    <p>"There's a bunch of trucking companies right now that are trying to find drivers, legally compliant drivers, because of the ones that have been pushed out. There are cabs that are sitting empty." That quote from AscendTMS CEO Tim Higham captures the month in one breath [FreightWaves]. Driver pay just posted its biggest two-month jump on record, spot rates topped contract for the first time since 2022, and LTL carriers are absorbing overflow from a truckload market that's finally tight again [FreightWaves][DC Velocity]. Inside: what's real, what's fragile, and what to watch.</p>
+  </div>
+
+  <div class="btl-section">
+    <div class="btl-label">The Big Story</div>
+    <h2>The freight market has turned -- but it's capacity, not demand, doing the heavy lifting.</h2>
+    <p>The Truck Driver Pay Index jumped from 150.83 in April to 170.04 in June -- a 13.5% surge in two months, and easily the largest short-window gain since the index began in 2020 [FreightWaves]. Superior Trucking Payroll's Mike Ritzema said he's never seen driver wages move like this. It aligns with spot rates that have finally punched through contract levels for the first time in more than three years, and with flatbed hitting an all-time high in June [DC Velocity].</p>
+    <p>But peel back the numbers and the story isn't a demand boom. DAT analyst Dean Croke put it bluntly: "If demand were driving this, volumes would be climbing too, and they're not" [DC Velocity]. FTR's Trucking Conditions Index hit a record 20.4 in May, yet FTR's Avery Vise warned the rebound is "principally a function of already-tight capacity followed by a series of disruptions" -- not broad-based freight growth [DC Velocity].</p>
+    <p>What's tightening capacity? Enforcement. The Trump administration's crackdown on non-domiciled CDLs, tougher English-language proficiency checks, and the shuttering of some driving schools have quietly pulled thousands of drivers off the road [DC Velocity]. Estes Express President Webb Estes called it a "double whammy" -- fewer drivers now, and fewer schools to replenish the ranks later [Transport Topics]. Meanwhile bankruptcies keep grinding through the small-carrier tier, with nine more transportation and logistics firms filing over two weeks in July [FreightWaves].</p>
+    <p>LTL is riding the wave. ArcBest saw weight-per-shipment jump 5% between April and May; Saia pushed through a 7.1% general rate increase in July; and FedEx Freight -- newly spun off as a standalone public company -- is chasing food and beverage, healthcare, and SMB freight it has historically underserved [Transport Topics]. Amazon formally entered LTL in June, though with a notably asset-light footprint of under 100 cross-docks versus roughly 300 for the top five incumbents [Transport Topics].</p>
+    <p>The takeaway for operators: pricing power is real, but it's built on a thin foundation. If enforcement eases or freight volumes stall, the capacity story gets a lot less compelling. For now, though, carriers with drivers in seats are finally getting paid what the work is worth.</p>
+  </div>
+
+  <div class="btl-section">
+    <div class="btl-label">Quick Takes</div>
+    <div class="btl-item">
+      <h3>The Supreme Court just changed broker liability -- and the AI question got harder</h3>
+      <p>After the unanimous Montgomery ruling on broker negligent selection, C.H. Robinson's very public AI push is drawing pointed questions about whether that same investment is flowing into carrier vetting [FreightWaves]. Transportation attorney Cassandra Gaines framed it sharply: "AI agents without context aren't worthwhile," and brokers can't credibly automate pricing and tracking while leaving safety vetting on autopilot. Expect plaintiff attorneys to make exactly that argument.</p>
+    </div>
+    <div class="btl-item">
+      <h3>Hormuz toll plan sends shockwaves through global shipping</h3>
+      <p>President Trump announced the U.S. will reinstate its Iranian blockade and charge 20% of cargo value for Strait of Hormuz transits -- a fee that could add roughly $10,000 per container on a typical box valued at $50,000 [The Loadstar]. Brent crude jumped past $86, oil prices climbed for a second straight day, and DP World is fast-tracking a new UAE terminal at Fujairah specifically to bypass the strait [Transport Topics][FreightWaves]. Fuel volatility is back on the table.</p>
+    </div>
+    <div class="btl-item">
+      <h3>$62 million in federal grants target truck parking</h3>
+      <p>USDOT's latest BUILD grant round included $62 million for truck parking projects across Kentucky, Wyoming, Louisiana, Mississippi, and Illinois -- with Kentucky alone getting $25 million to add spaces at seven rest areas on four major corridors [FreightWaves]. It's a modest slice of the $1.73 billion package, but a rare federal acknowledgment of a problem drivers have been raising for years.</p>
+    </div>
+    <div class="btl-item">
+      <h3>EPA moves to kill DEF derates</h3>
+      <p>EPA proposed eliminating engine derates triggered by diesel exhaust fluid system issues, replacing them with dashboard alerts [Transport Topics]. ATA's Patrick Kelly welcomed the flexibility, noting derates can strand trucks, though truck-stop and fuel-marketer groups pushed back, warning it could undermine one of trucking's clearest emissions success stories. Cummins, Paccar, and Daimler are already rolling out related software updates covering millions of engines.</p>
+    </div>
+    <div class="btl-item">
+      <h3>Illinois contractor case goes class action</h3>
+      <p>A federal judge granted class-action status to a Fair Labor Standards Act suit against Illinois carrier Risinger Brothers Transfer, potentially sweeping in lease-purchase, owner-operator, team, and brokerage drivers alleging they were misclassified as contractors [FreightWaves]. The core claim -- that deductions drove effective pay below minimum wage -- is familiar territory, but the class certification raises the stakes for any carrier running a lease-purchase model.</p>
+    </div>
+    <div class="btl-item">
+      <h3>Gordie Howe Bridge finally opens July 27</h3>
+      <p>After a six-week delay over toll revenue-sharing, the U.S. and Canada agreed to open the new Detroit-Windsor crossing on July 27 [Supply Chain Dive]. The Canadian Trucking Alliance expects immediate efficiency gains on the busiest commercial trade corridor between the two countries, with modern customs facilities and direct freeway-to-freeway connections reducing congestion at the aging Ambassador Bridge.</p>
+    </div>
+  </div>
+
+  <div class="btl-section">
+    <div class="btl-label">What to Watch</div>
+    <div class="btl-item">
+      <h3>Will driver pay keep climbing into fall?</h3>
+      <p>Superior's Ritzema notes a four-to-six-month lag between spot rate moves and driver wages, meaning the recent rate surge should continue pushing pay higher into Q3 and Q4 [FreightWaves]. If enforcement-driven capacity tightness holds, carriers should plan compensation reviews and recruiting budgets around materially higher wage baselines than they modeled six months ago.</p>
+    </div>
+    <div class="btl-item">
+      <h3>Peak season inventory pull-forward is already underway</h3>
+      <p>The Logistics Managers Index hit 71.1 in June -- its second-highest reading since March 2022 -- driven by retailers stockpiling ahead of potential tariff escalations later in July [DC Velocity]. GEP's June data shows manufacturer safety-stock building at levels last seen in early 2023. Expect compressed peak-season timing and heavier August-September volumes for final-mile fleets.</p>
+    </div>
+    <div class="btl-item">
+      <h3>FedEx Freight and Amazon reshape the LTL competitive map</h3>
+      <p>A newly independent FedEx Freight is publicly targeting SMB, food and beverage, healthcare, and data center freight -- segments where CEO John Smith admits penetration is minimal or "basically zero" [Transport Topics]. Amazon's asset-light LTL entrance adds a second wild card. Watch for pricing pressure in specific verticals even as headline GRIs continue climbing.</p>
+    </div>
+  </div>
+
+  <div class="btl-bottom">
+    <div class="btl-label">The Bottom Line</div>
+    <p>This month's freight strength is real but structurally fragile -- built on enforcement-driven capacity cuts rather than shipper demand. For carriers and final-mile operators, the window is open to lock in rate discipline, invest in driver pay, and tighten the safety and vetting practices the courts are now scrutinizing. The operators who use this stretch to build durable capability -- not just ride the cycle -- will be the ones still standing when the next turn comes.</p>
+  </div>
+
+  <div class="btl-foot">
+    <div class="btl-foot-name">Kelly Anderson Group / Impact Solutions</div>
+    <div class="btl-foot-tag">Workforce development for the transportation industry since 1996.</div>
+
+    <table>
+      <tr>
+        <td>Final Mile Safety Trainer Program</td>
+        <td>P&amp;D fleets</td>
+      </tr>
+      <tr>
+        <td>Truckload Driver Finisher Program</td>
+        <td>Line-haul carriers</td>
+      </tr>
+      <tr>
+        <td>ELDT, e-Learning, Recruiting &amp; Retention</td>
+        <td>Consulting</td>
+      </tr>
+    </table>
+
+    <div class="btl-foot-contact">
+      <a href="https://www.kellyandersongroup.com">www.kellyandersongroup.com</a>
+      &nbsp;|&nbsp; <a href="tel:14174510853">(417) 451-0853</a><br>
+      Bill Rohr &nbsp;|&nbsp; <a href="mailto:billrohr@kellyandersongroup.com">billrohr@kellyandersongroup.com</a>
+    </div>
+  </div>
+
+  <div class="btl-src">
+    <button type="button" class="btl-src-toggle" onclick="
+      this.classList.toggle('btl-open');
+      this.nextElementSibling.classList.toggle('btl-open');
+    ">Sources</button>
+
+    <div class="btl-src-body">
+      <div class="btl-src-note">Compiled 2026-07-14 from 5 publications over the past 30 days.</div>
+      <div class="btl-src-pub">
+        <div class="btl-src-pub-name">DC Velocity</div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.dcvelocity.com/logistics/inventory/business-stockpile-inventory-amid-uncertainty-about-us-iran-ceasefire" target="_blank" rel="noopener">Business stockpile inventory amid uncertainty about US-Iran ceasefire</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.dcvelocity.com/transportation/maritime-ocean/ports/georgia-ports-names-price-to-succeed-lynch-as-ceo" target="_blank" rel="noopener">Georgia Ports names Price to succeed Lynch as CEO</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.dcvelocity.com/transportation/trucking/drayage/port-of-la-offers-300k-incentive-to-buy-electric-drayage-trucks" target="_blank" rel="noopener">Port of LA offers $300k incentive to buy electric drayage trucks</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.dcvelocity.com/transportation/fuelish-thinking" target="_blank" rel="noopener">Fuelish thinking</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.dcvelocity.com/material-handling/robotics/smart-robotics-save-the-day" target="_blank" rel="noopener">Smart robotics save the day</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-09</span><a href="https://www.dcvelocity.com/material-handling/storage/as-rs-shuttles/element-logic-and-lululemon-open-1-million-square-foot-ontario-warehouse" target="_blank" rel="noopener">Element Logic and Lululemon open 1 million square foot Ontario warehouse</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-09</span><a href="https://www.dcvelocity.com/technology/automatic-data-capture/peak-technologies-names-heel-as-new-ceo" target="_blank" rel="noopener">Peak Technologies names Heel as new CEO</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-09</span><a href="https://www.dcvelocity.com/transportation/trucking/dat-truckload-rate-recovery-is-based-on-tight-capacity-not-broad-demand" target="_blank" rel="noopener">DAT: Truckload rate recovery is based on tight capacity, not broad demand</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-09</span><a href="https://www.dcvelocity.com/editorial/featured/logistics-activity-expanded-in-june-2677198852" target="_blank" rel="noopener">Logistics activity expanded in June</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-08</span><a href="https://www.dcvelocity.com/transportation/trucking/ftr-trucking-sector-recovery-to-hit-a-ceiling-without-better-freight-growth" target="_blank" rel="noopener">FTR: Trucking sector recovery to hit a ceiling without better freight growth</a></div>
+      </div>
+      <div class="btl-src-pub">
+        <div class="btl-src-pub-name">FreightWaves</div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.freightwaves.com/news/big-rig-crash-closes-eastbound-i-80-near-donner-pass" target="_blank" rel="noopener">Big Rig Crash Closes Eastbound I-80 Near Donner Pass</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.freightwaves.com/news/freight-distress-report-carrier-logistics-closures-erase-over-245-jobs" target="_blank" rel="noopener">Freight Distress Report: Carrier, logistics closures erase over 245 jobs</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.freightwaves.com/news/dont-get-in-trouble-again-c-h-robinson-ai-everywhere-except-carrier-vetting-is-a-problem" target="_blank" rel="noopener">Don’t Get in Trouble Again, C.H. Robinson: AI Everywhere Except Carrier Vetting Is a Problem</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.freightwaves.com/news/index-of-driver-pay-product-of-two-companies-is-surging" target="_blank" rel="noopener">Index of driver pay, product of two companies, is surging</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.freightwaves.com/news/project44-forms-two-new-businesses-launches-ai-native-lsp44" target="_blank" rel="noopener">Project44 forms two new businesses, launches AI-native LSP44</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.freightwaves.com/news/jaxport-adds-new-asia-latam-med-container-service" target="_blank" rel="noopener">Jaxport adds new Asia-LatAm-Med container service</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.freightwaves.com/news/norfolk-southern-conductor-struck-killed-by-train-in-indiana" target="_blank" rel="noopener">Norfolk Southern conductor struck, killed by train in Indiana</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.freightwaves.com/news/dp-world-plans-uae-port-container-terminal-to-bypass-strait-of-hormuz-report" target="_blank" rel="noopener">DP World plans UAE port, container terminal to bypass Strait of Hormuz: Report</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.freightwaves.com/news/illinois-employee-driver-v-contractor-lawsuit-now-a-class-action-fight" target="_blank" rel="noopener">Illinois employee driver v. contractor lawsuit now a class action fight</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.freightwaves.com/news/federal-grants-set-62m-for-truck-parking-in-five-states" target="_blank" rel="noopener">Federal grants set $62M for truck parking in five states</a></div>
+      </div>
+      <div class="btl-src-pub">
+        <div class="btl-src-pub-name">Supply Chain Dive</div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.supplychaindive.com/news/strauss-dhl-supply-chain-ink-end-to-end-logistics-deal/825079/" target="_blank" rel="noopener">Strauss, DHL Supply Chain ink end-to-end logistics deal</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.supplychaindive.com/news/port-of-savannah-linked-corridor-to-streamline-flow-of-goods/825087/" target="_blank" rel="noopener">Port of Savannah-linked corridor to streamline flow of goods</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.supplychaindive.com/news/should-the-postal-service-reassess-its-ups-air-contract/825073/" target="_blank" rel="noopener">Should the Postal Service reassess its UPS air contract?</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.supplychaindive.com/news/pepsico-improves-sustainable-sourcing-delays-emissions-reporting/824903/" target="_blank" rel="noopener">PepsiCo improves sustainable sourcing, delays emissions reporting</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.supplychaindive.com/news/mars-to-close-natures-bakery-plant-lay-off-345-workers/824855/" target="_blank" rel="noopener">Mars to close Nature’s Bakery plant, lay off 345 workers</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.supplychaindive.com/news/general-mills-plans-supply-chain-revamp-as-part-of-3b-cost-cutting-effort/824889/" target="_blank" rel="noopener">General Mills plans supply chain revamp as part of $3B cost-cutting effort</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.supplychaindive.com/news/gordie-howe-bridge-set-to-open-july-27-after-weekslong-delay/825066/" target="_blank" rel="noopener">Gordie Howe bridge set to open July 27 after weekslong delay</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.supplychaindive.com/news/amazon-preps-robotics-equipped-sorting-warehouse-in-texas/824978/" target="_blank" rel="noopener">Amazon preps robotics-equipped sorting warehouse in Texas</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.supplychaindive.com/news/amazon-announces-2026-holiday-fulfillment-fees-advises-early-shipping/824962/" target="_blank" rel="noopener">Amazon announces 2026 holiday fulfillment fees, advises early shipping</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.supplychaindive.com/news/how-restaurants-can-combat-ingredient-inconsistencies/824857/" target="_blank" rel="noopener">How restaurants can combat ingredient inconsistencies</a></div>
+      </div>
+      <div class="btl-src-pub">
+        <div class="btl-src-pub-name">The Loadstar</div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://theloadstar.com/opportunistic-brokers-jumping-on-as-tariff-refund-bandwagon-rolls-on/" target="_blank" rel="noopener">Tariff refund bandwagon rolls on, but SMEs struggling</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://theloadstar.com/loadstar-leader-trump-hormuz-toll-plan-catastrophic-for-box-shipping/" target="_blank" rel="noopener">Loadstar Leader: Trump Hormuz toll plan catastrophic for box shipping</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://theloadstar.com/cargo-chaos-in-north-asian-ports-as-typhoon-bavi-blows-in/" target="_blank" rel="noopener">Cargo chaos in North Asian ports as Typhoon Bavi blows in</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://theloadstar.com/why-chinas-port-giants-are-sitting-out-the-big-ma-cycle/" target="_blank" rel="noopener">Why China’s port giants are sitting out the big M&amp;A cycle</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://theloadstar.com/container-rate-rally-has-more-legs-than-bears-assume/" target="_blank" rel="noopener">Container rate rally has more legs than bears assume</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://theloadstar.com/ex-schenker-dsv-leader-rumoured-to-join-dhl-group/" target="_blank" rel="noopener">Ex-Schenker/DSV leader rumoured to join DHL Group</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://theloadstar.com/transpacific-the-top-earner-as-a-strong-q2-boosts-oocl-revenue/" target="_blank" rel="noopener">Transpacific the top earner as a strong Q2 boosts OOCL revenue</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://theloadstar.com/fedex-cma-cgm-deal-hints-at-new-battle-for-air-cargo-capacity/" target="_blank" rel="noopener">FedEx-CMA CGM deal hints at new battle for air cargo capacity</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://theloadstar.com/ai-hardware-props-up-air-freight-spare-a-thought-for-the-downside/" target="_blank" rel="noopener">AI hardware props up air freight – spare a thought for the downside</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://theloadstar.com/air-canada-and-avianca-set-course-for-network-alignment/" target="_blank" rel="noopener">Air Canada and Avianca set course for network alignment</a></div>
+      </div>
+      <div class="btl-src-pub">
+        <div class="btl-src-pub-name">Transport Topics</div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.ttnews.com/articles/uber-talks-buy-delivery-hero" target="_blank" rel="noopener">Uber is in advanced talks to acquire Delivery Hero</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.ttnews.com/articles/ltl-outlook-july-2026" target="_blank" rel="noopener">LTL carriers eye further growth due to truckload constraints</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.ttnews.com/articles/inflation-june-iran-war" target="_blank" rel="noopener">Falling gas prices cut inflation last month</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.ttnews.com/articles/oil-prices-soar-fighting-mideast" target="_blank" rel="noopener">Oil prices soar over $85 as fighting flares in Middle East</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-14</span><a href="https://www.ttnews.com/articles/why-difficult-reopen-hormuz" target="_blank" rel="noopener">Here's why it's so difficult for U.S. to fully reopen Hormuz</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.ttnews.com/articles/epa-end-def-derates" target="_blank" rel="noopener">EPA proposes end to DEF derates to mixed reception</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.ttnews.com/articles/deficit-widens-tariff-refunds" target="_blank" rel="noopener">U.S. budget deficit widens as tariff refunds surge</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.ttnews.com/articles/jones-act-waiver-policy-fight" target="_blank" rel="noopener">Trump’s Jones Act waiver sparks long-term policy fight</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.ttnews.com/articles/iran-shipped-57m-barrels-oil" target="_blank" rel="noopener">Iran shipped 57M barrels of crude oil between U.S. blockades</a></div>
+        <div class="btl-src-row"><span class="btl-src-date">2026-07-13</span><a href="https://www.ttnews.com/articles/us-iran-vie-strait-hormuz" target="_blank" rel="noopener">Trump says U.S. will blockade Iran in Strait of Hormuz</a></div>
+      </div>
+    </div>
+  </div>
+
+</div>

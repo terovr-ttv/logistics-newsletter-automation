@@ -1,9 +1,74 @@
-"""Generate a newsletter summary from articles using the Claude API."""
+"""Generate a structured newsletter from articles using the Claude API."""
 from __future__ import annotations
 
 import anthropic
+from pydantic import BaseModel, Field
 
 from sources import Article
+
+
+class NewsletterItem(BaseModel):
+    """A short newsletter item (Quick Take or What to Watch entry)."""
+
+    headline: str = Field(
+        description=(
+            "Short punchy headline for this item -- a single sentence, no formatting. "
+            "Written like a newsletter subhead, sentence case, no title case."
+        )
+    )
+    body: str = Field(
+        description=(
+            "2-3 sentences of substance, written in the Between the Lines newsletter voice. "
+            "Include inline source citations in brackets like [FreightWaves]. "
+            "May be a single paragraph -- no line breaks."
+        )
+    )
+
+
+class Newsletter(BaseModel):
+    """A complete monthly issue of Between the Lines."""
+
+    opening: str = Field(
+        description=(
+            "One paragraph of ~80 words. Open with energy -- ideally a real quote or sharp "
+            "stat pulled from the source articles. Name the single most important thing this "
+            "month and preview what's inside the issue. Include inline [Source] citations. "
+            "No line breaks."
+        )
+    )
+    big_story_headline: str = Field(
+        description=(
+            "A single-sentence headline for the big story section. Declarative, complete "
+            "sentence, sentence case. Example: 'The freight market has turned, and this "
+            "time it looks structural, not seasonal.'"
+        )
+    )
+    big_story_paragraphs: list[str] = Field(
+        description=(
+            "3-5 paragraphs, ~300 words total combined, on the deepest story of the month. "
+            "Each element is one paragraph (2-4 sentences). Include [Source] citations inline. "
+            "No line breaks within any paragraph."
+        )
+    )
+    quick_takes: list[NewsletterItem] = Field(
+        description=(
+            "4-6 shorter items covering other notable developments worth knowing. "
+            "Each item's body is 2-3 sentences with inline [Source] citations."
+        )
+    )
+    what_to_watch: list[NewsletterItem] = Field(
+        description=(
+            "2-3 forward-looking items about emerging stories that will shape next month. "
+            "Brief and specific."
+        )
+    )
+    bottom_line: str = Field(
+        description=(
+            "A single closing paragraph of ~60 words. What does this month tell carriers and "
+            "final-mile operators about where the industry is heading? Confident, partner-tone "
+            "observation -- not a sales pitch. No line breaks."
+        )
+    )
 
 
 SYSTEM_PROMPT = """You are writing "Between the Lines" -- the monthly industry newsletter \
@@ -18,13 +83,12 @@ VOICE & STYLE
 - Conversational but professional. Contractions are welcome. Talk WITH the reader, not at them.
 - Open with energy. Lead with a vivid framing line, a sharp number, or a real quote pulled from \
 the source articles -- never with "This month..." or "In recent news..."
-- Short paragraphs (2-4 sentences). Bold the takeaway, not the noun. Use a longer paragraph only \
-when one story genuinely deserves more room.
+- Short paragraphs. Let strong sentences carry the weight.
 - Cite sources inline in brackets like [FreightWaves] so readers can trace claims to the appendix.
 - Optimistic and partnership-oriented in framing. We're industry insiders sharing useful \
 intelligence -- not doomscrolling.
-- Do NOT sell our programs inside the body of the newsletter. The newsletter earns trust by \
-being genuinely useful; brand mentions live in the footer, which is added automatically.
+- Do NOT sell our programs inside the body of the newsletter. Brand mentions live in the footer, \
+which is added automatically.
 
 WHAT MATTERS TO OUR READERS
 Freight rates and capacity, driver recruiting and retention, safety and DOT compliance, fuel \
@@ -34,38 +98,15 @@ the economics of running a truck or a delivery fleet."""
 
 USER_PROMPT_TEMPLATE = """Below are {article_count} articles from {source_count} leading \
 transportation publications, gathered over the past {lookback_days} days. Write the next \
-issue of Between the Lines.
+issue of Between the Lines as a structured JSON object matching the provided schema.
 
-HARD CONSTRAINTS
-- Target length: 1,000-1,300 words total. This must fit on two 8.5x11 printed pages.
-- Use the structure below. If a section lacks a real story this month, skip it rather than pad.
-- Plain text output only. No Markdown headers, no asterisks for emphasis. Use ALL-CAPS section \
-labels followed by a blank line.
-- For emphasis within paragraphs, you may use ALL-CAPS sparingly for a key term -- but prefer \
-to let strong sentences carry the weight on their own.
+TARGET LENGTH
+Total ~1,000-1,300 words across all fields combined. Fits on two 8.5x11 printed pages.
 
-STRUCTURE
+If a section lacks a real story this month, keep it brief rather than pad -- but do include \
+at least the minimum item counts specified in the schema.
 
-OPENING (about 80 words)
-A confident, one-paragraph lead that names the single most important thing happening in the \
-industry this month and previews what's inside the issue.
-
-THE BIG STORY (about 300 words)
-The deeper-dive feature -- the story that most affects our readers' operations. Give it room. \
-Draw from multiple sources where it strengthens the analysis.
-
-QUICK TAKES (about 400 words across 4-6 items)
-Other notable developments worth knowing. Each item: a short headline of your own writing (one \
-line, no formatting), then 2-3 sentences of substance. Group thematically if it improves flow \
-(e.g., RATES & CAPACITY, REGULATION DESK, TECH WATCH) or run them straight.
-
-WHAT TO WATCH (about 150 words across 2-3 items)
-Forward-looking -- emerging stories that haven't fully landed yet but will shape next month. \
-Brief and specific.
-
-THE BOTTOM LINE (about 60 words)
-A single closing paragraph: what does this month tell carriers and final-mile operators about \
-where the industry is heading? End with a confident, partner-tone observation -- not a sales pitch.
+Every paragraph and item body must be a single continuous string with no line breaks.
 
 ARTICLES:
 
@@ -73,13 +114,14 @@ ARTICLES:
 """
 
 
-def build_summary(
+def build_newsletter(
     articles: list[Article],
     model: str,
     lookback_days: int,
-) -> str:
+) -> Newsletter | None:
+    """Return a parsed Newsletter, or None if no articles were gathered."""
     if not articles:
-        return "No articles were gathered this period. Check feed URLs and network access."
+        return None
 
     source_count = len({a.source for a in articles})
     article_blocks = "\n\n---\n\n".join(a.to_prompt_block() for a in articles)
@@ -94,21 +136,16 @@ def build_summary(
     client = anthropic.Anthropic()
 
     print(f"Calling Claude ({model}) with {len(articles)} articles...")
-    with client.messages.stream(
+    response = client.messages.parse(
         model=model,
         max_tokens=16000,
         thinking={"type": "adaptive"},
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_prompt}],
-    ) as stream:
-        message = stream.get_final_message()
-
-    text_parts = [block.text for block in message.content if block.type == "text"]
-    summary = "\n".join(text_parts).strip()
-
-    usage = message.usage
-    print(
-        f"  -> {usage.input_tokens} input + {usage.output_tokens} output tokens"
+        output_format=Newsletter,
     )
 
-    return summary
+    usage = response.usage
+    print(f"  -> {usage.input_tokens} input + {usage.output_tokens} output tokens")
+
+    return response.parsed_output

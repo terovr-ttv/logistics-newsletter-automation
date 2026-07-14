@@ -9,7 +9,7 @@ import yaml
 from dotenv import load_dotenv
 
 from sources import fetch_all
-from summarizer import build_summary
+from summarizer import build_newsletter
 from output import write_newsletter
 
 
@@ -23,6 +23,7 @@ def main() -> int:
     repo_root = Path(__file__).resolve().parent.parent
     config_path = repo_root / "config.yaml"
     output_dir = repo_root / "summaries"
+    templates_dir = repo_root / "templates"
 
     with config_path.open(encoding="utf-8") as f:
         config = yaml.safe_load(f)
@@ -35,16 +36,21 @@ def main() -> int:
 
     print(f"\nTotal articles gathered: {len(articles)}\n")
 
-    summary = build_summary(
+    newsletter = build_newsletter(
         articles=articles,
         model=config["model"],
         lookback_days=config["lookback_days"],
     )
 
+    if newsletter is None:
+        print("No articles gathered -- skipping newsletter generation.")
+        return 1
+
     write_newsletter(
-        summary=summary,
+        nl=newsletter,
         articles=articles,
         output_dir=output_dir,
+        templates_dir=templates_dir,
         lookback_days=config["lookback_days"],
     )
 
