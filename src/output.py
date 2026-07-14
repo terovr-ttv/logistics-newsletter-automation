@@ -29,7 +29,6 @@ Workforce development for the transportation industry since 1996.
   ELDT, e-Learning, recruiting and retention consulting
 
   www.kellyandersongroup.com  |  (417) 451-0853
-  Bill Rohr  |  billrohr@kellyandersongroup.com
 ------------------------------------------------------------------------
 """
 
