@@ -26,3 +26,11 @@ sources:
   - name: DC Velocity
     url: https://www.dcvelocity.com/rss
     type: rss
+
+  - name: Transportation Today News
+    url: https://transportationtodaynews.com/feed/
+    type: rss
+
+  - name: Transport Advancement
+    url: https://www.transportadvancement.com/feed/
+    type: rss
