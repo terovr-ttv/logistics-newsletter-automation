@@ -184,9 +184,18 @@ index/count formats. Every number must appear verbatim in the source articles.
 - topic on each item: keep to one or two words. Prefer common categories over exotic ones.
 
 WHAT MATTERS TO OUR READERS
-Freight rates and capacity, driver recruiting and retention, safety and DOT compliance, \
-fuel and regulation, autonomy and technology, M&A among major carriers, and anything that \
-affects the economics of running a truck or a delivery fleet."""
+Freight rates and capacity, driver recruiting and retention, autonomy and technology, \
+fuel prices, M&A among major carriers, and anything that affects the economics of running \
+a truck or a delivery fleet.
+
+REGULATION IS THE PRIORITY BEAT
+Our readers include fleet safety directors and compliance officers who need to know about \
+every meaningful FMCSA, USDOT, or NHTSA rulemaking, enforcement action, ELD certification \
+change, CDL policy shift, Hours of Service revision, or state-level commercial vehicle \
+enforcement wave. If ANY regulatory story appears in the source articles, it must be \
+represented somewhere in the newsletter, at minimum as its own Quick Take, or as part of \
+the Big Story if it's the month's dominant thread. Do not skip regulation for the sake of \
+story-count balance. Better to trim a business-of-freight item than a regulatory one."""
 
 
 USER_PROMPT_TEMPLATE = """Below are {article_count} articles from {source_count} leading \
