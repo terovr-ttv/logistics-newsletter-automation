@@ -1,10 +1,12 @@
-"""Render the newsletter to plain text and HTML files."""
+"""Render the newsletter to HTML, then convert to PDF via headless Chromium."""
 from __future__ import annotations
 
 from datetime import datetime
 from html import escape
 from pathlib import Path
 from string import Template
+
+from playwright.sync_api import sync_playwright
 
 from sources import Article
 from summarizer import KeyNumber, Newsletter, PullQuote
@@ -16,115 +18,6 @@ ISSUE_ONE_MONTH = 6
 
 def _issue_number(now: datetime) -> int:
     return (now.year - ISSUE_ONE_YEAR) * 12 + (now.month - ISSUE_ONE_MONTH) + 1
-
-
-# ---------- Plain-text rendering ----------
-
-TEXT_MASTHEAD = """\
-========================================================================
-                          BETWEEN THE LINES
-     Issue No. {issue_no:02d}  |  {month_year}  |  Kelly Anderson Group
-========================================================================
-
-"""
-
-TEXT_FOOTER_TEMPLATE = """
-
-------------------------------------------------------------------------
-Kelly Anderson Group / Impact Solutions
-Workforce development for the transportation industry since 1996.
-
-  Final Mile Safety Trainer Program ......... P&D fleets
-  Truckload Driver Finisher Program ......... line-haul carriers
-  ELDT, e-Learning, recruiting and retention consulting
-
-  www.kellyandersongroup.com  |  (417) 451-0853
-
-  (c) {year} Kelly Anderson Group. Compiled from public industry reporting.
-------------------------------------------------------------------------
-"""
-
-
-def _text_stats(numbers: list[KeyNumber]) -> str:
-    lines = ["", "BY THE NUMBERS", ""]
-    width = max(len(n.number) for n in numbers) if numbers else 0
-    for n in numbers:
-        lines.append(f"  {n.number.ljust(width)}    {n.label}")
-    return "\n".join(lines) + "\n"
-
-
-def _text_pull_quote(quote: PullQuote) -> str:
-    return (
-        "\n"
-        f'    "{quote.text}"\n'
-        f"      -- {quote.attribution}\n"
-    )
-
-
-def _text_body(nl: Newsletter) -> str:
-    parts = [
-        "OPENING",
-        "",
-        nl.opening,
-        "",
-        "",
-        "THE BIG STORY",
-        nl.big_story_deck,
-        "",
-        nl.big_story_headline,
-        "",
-    ]
-
-    # Weave stats after paragraph 1 and pull quote after paragraph 2.
-    paragraphs = nl.big_story_paragraphs
-    if paragraphs:
-        parts.append(paragraphs[0])
-    if nl.key_numbers:
-        parts.append(_text_stats(nl.key_numbers))
-    if len(paragraphs) > 1:
-        parts.append(paragraphs[1])
-    if nl.pull_quote:
-        parts.append(_text_pull_quote(nl.pull_quote))
-    for p in paragraphs[2:]:
-        parts.append(p)
-    parts.append("")
-
-    parts.extend(["QUICK TAKES", ""])
-    for item in nl.quick_takes:
-        parts.append(f"[{item.topic.upper()}]  {item.headline}")
-        parts.append(item.body)
-        parts.append("")
-
-    parts.extend(["WHAT TO WATCH", ""])
-    for item in nl.what_to_watch:
-        parts.append(f"[{item.topic.upper()}]  {item.headline}")
-        parts.append(item.body)
-        parts.append("")
-
-    parts.extend(["THE BOTTOM LINE", "", nl.bottom_line])
-    return "\n".join(parts)
-
-
-def _text_sources(articles: list[Article], compile_date: str, lookback_days: int) -> str:
-    lines = [
-        "\n\n========================================================================",
-        "SOURCES",
-        f"Compiled {compile_date} from {len({a.source for a in articles})} "
-        f"publications over the past {lookback_days} days.",
-        "========================================================================\n",
-    ]
-    by_source: dict[str, list[Article]] = {}
-    for art in articles:
-        by_source.setdefault(art.source, []).append(art)
-
-    for source, items in sorted(by_source.items()):
-        lines.append(f"\n[{source}]")
-        for art in items:
-            date = art.published.strftime("%Y-%m-%d") if art.published else "n/a"
-            lines.append(f"  {date}  {art.title}")
-            lines.append(f"             {art.url}")
-
-    return "\n".join(lines)
 
 
 # ---------- HTML rendering ----------
@@ -230,6 +123,38 @@ def _html_sources(articles: list[Article]) -> str:
     return "\n".join(blocks)
 
 
+# ---------- PDF rendering ----------
+
+
+def html_to_pdf(html_path: Path, pdf_path: Path) -> None:
+    """Render the given HTML file to a PDF using headless Chromium.
+
+    Uses screen media (not print) so the PDF matches what a browser shows.
+    Programmatically expands the collapsible Sources block since its toggle
+    button won't fire in a static document.
+    """
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        try:
+            page = browser.new_page()
+            page.goto(html_path.absolute().as_uri())
+            page.emulate_media(media="screen")
+            page.evaluate(
+                """
+                document.querySelectorAll('.btl-src-toggle').forEach(btn => btn.classList.add('btl-open'));
+                document.querySelectorAll('.btl-src-body').forEach(body => body.classList.add('btl-open'));
+                """
+            )
+            page.pdf(
+                path=str(pdf_path),
+                format="Letter",
+                margin={"top": "0.5in", "bottom": "0.5in", "left": "0.5in", "right": "0.5in"},
+                print_background=True,
+            )
+        finally:
+            browser.close()
+
+
 # ---------- Entry point ----------
 
 
@@ -247,18 +172,6 @@ def write_newsletter(
     compile_date = now.strftime("%Y-%m-%d")
     stem = now.strftime("%Y-%m")
     issue_no = _issue_number(now)
-
-    # ---- TEXT ----
-    text_path = output_dir / f"{stem}.txt"
-    text_full = (
-        TEXT_MASTHEAD.format(issue_no=issue_no, month_year=month_year)
-        + _text_body(nl)
-        + TEXT_FOOTER_TEMPLATE.format(year=now.year)
-        + _text_sources(articles, compile_date, lookback_days)
-        + "\n"
-    )
-    text_path.write_text(text_full, encoding="utf-8")
-    print(f"Wrote {text_path} ({len(text_full):,} bytes)")
 
     # ---- HTML ----
     html_path = output_dir / f"{stem}.html"
@@ -282,4 +195,9 @@ def write_newsletter(
     html_path.write_text(html_full, encoding="utf-8")
     print(f"Wrote {html_path} ({len(html_full):,} bytes)")
 
-    return text_path, html_path
+    # ---- PDF ----
+    pdf_path = output_dir / f"{stem}.pdf"
+    html_to_pdf(html_path, pdf_path)
+    print(f"Wrote {pdf_path} ({pdf_path.stat().st_size:,} bytes)")
+
+    return html_path, pdf_path
