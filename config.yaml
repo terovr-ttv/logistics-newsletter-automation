@@ -2,6 +2,12 @@ model: claude-opus-4-7
 max_articles_per_source: 10
 lookback_days: 30
 
+mailchimp:
+  from_name: "Kelly Anderson Group"
+  reply_to: "contact@kellyandersongroup.com"
+  subject_prefix: "Between the Lines"
+  # intro_message: "A note from the team before you dive in..."
+
 sources:
   - name: FreightWaves
     url: https://www.freightwaves.com/news/feed
